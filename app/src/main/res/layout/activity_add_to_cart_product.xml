@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".add_to_cart_product">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/greenmeee"
+        app:cardElevation="@dimen/_10sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/close_btn_add_to_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="6dp"
+                android:drawableTint="@color/white"
+                android:drawableStart="@drawable/back11_vector" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_11sdp"
+                android:fontFamily="@font/dm_serif_display"
+                android:text="Bag"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_18ssp" />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="@dimen/_15sdp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/rupee_vector"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/dm_serif_display"
+                    android:maxLines="1"
+                    android:text="00"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_18ssp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/caudex"
+                    android:text="VIEW PRICE DETAILS"
+                    android:textColor="#22AC27"
+                    android:textSize="@dimen/_11ssp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_buy_add_to_cart"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_background"
+                android:fontFamily="@font/dm_serif_display"
+                android:text="Continue"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_45sdp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="30dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="5dp"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:fontFamily="@font/caudex"
+                            android:text="Deliver to :"
+                            android:textColor="#67A222"
+                            android:textSize="@dimen/_14ssp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/change_btn_A2C"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="140dp"
+                            android:background="@drawable/btn_background22"
+                            android:fontFamily="@font/caudex"
+                            android:text="Change"
+                            android:padding="10dp"
+                            android:textColor="#28992D"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="15dp"
+                        android:paddingBottom="10dp"
+                        android:orientation="vertical">
+
+
+
+                            <TextView
+                                android:id="@+id/name_A2C"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/caudex"
+                                android:text="Parthik Dhimmar"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_15ssp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/address_A2C"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/caudex"
+                                android:text="Badal faliya, Machiwad, Bilimora, near dhimmar panch, Bilimora 396321 "
+                                android:textColor="#5E5C5C"
+                                android:textSize="@dimen/_13ssp" />
+
+
+
+
+                        <TextView
+                            android:id="@+id/mobile_no_A2C"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/caudex"
+                            android:text="6353394323"
+                            android:textColor="#5E5C5C"
+                            android:textSize="@dimen/_13ssp" />
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycleView_product_A2C"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <LinearLayout
+                android:id="@+id/layoutPriceDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="50dp"
+                android:visibility="gone">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="30dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="10dp"
+                    android:visibility="visible"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_18sdp"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:fontFamily="@font/caudex"
+                                android:text="Price Details"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_14ssp"
+                                android:textStyle="bold" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_25sdp"
+                                android:layout_marginLeft="@dimen/_7sdp"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:text="("
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_15ssp"
+                                android:textStyle="bold" />
+
+
+                            <TextView
+                                android:id="@+id/txtTotal"
+                                android:layout_width="@dimen/_22sdp"
+                                android:layout_height="@dimen/_25sdp"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:fontFamily="@font/caudex"
+                                android:text="10"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_14ssp"
+                                android:textStyle="bold" />
+
+
+                            <TextView
+                                android:layout_width="@dimen/_36sdp"
+                                android:layout_height="@dimen/_25sdp"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:fontFamily="@font/caudex"
+                                android:text="item"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_14ssp"
+                                android:textStyle="bold" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_25sdp"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:text=")"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_15ssp"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_18sdp"
+                                android:fontFamily="@font/caudex"
+                                android:text="Total Product Price"
+                                android:textColor="#6E6B6B"
+                                android:textSize="@dimen/_14ssp" />
+
+
+
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="100dp"
+                                android:layout_alignParentEnd="true"
+                                android:drawableStart="@drawable/plus_vector"
+                                android:textSize="@dimen/_15ssp" />
+
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="40dp"
+                                android:orientation="horizontal">
+
+
+
+                                <TextView
+                                    android:id="@+id/total_price_A2C"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:drawableStart="@drawable/rupee_vector30"
+                                    android:fontFamily="@font/caudex"
+                                    android:text="00"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_15ssp" />
+
+
+                            </RelativeLayout>
+
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_18sdp"
+                                android:fontFamily="@font/caudex"
+                                android:text="Total Discounts"
+                                android:textColor="#04A50A"
+                                android:textSize="@dimen/_14ssp"/>
+
+
+
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="100dp"
+                                android:layout_alignParentEnd="true"
+                                android:drawableTint="#04A50A"
+                                android:drawableStart="@drawable/minus_vector"
+                                android:textSize="@dimen/_15ssp" />
+
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="40dp"
+                                android:orientation="horizontal">
+
+
+
+                                <TextView
+                                    android:id="@+id/discount_price_A2C"
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:drawableStart="@drawable/rupee_vector30"
+                                    android:fontFamily="@font/caudex"
+                                    android:text="00"
+                                    android:drawableTint="#04A50A"
+
+                                    android:textColor="#04A50A"
+                                    android:textSize="@dimen/_15ssp" />
+
+
+                            </RelativeLayout>
+
+
+                        </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:background="@drawable/columan_vector"
+                            android:backgroundTint="@color/black" />
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="20dp"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_18sdp"
+                                android:fontFamily="@font/caudex"
+                                android:text="Order Total"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_14ssp" />
+
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="40dp"
+                                android:orientation="horizontal">
+
+
+                                <TextView
+                                    android:id="@+id/total_order_A2C"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:drawableTint="@color/black"
+                                    android:fontFamily="@font/caudex"
+                                    android:text="00"
+                                    android:drawableStart="@drawable/rupee_vector30"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_15ssp" />
+
+
+                            </RelativeLayout>
+
+
+                        </RelativeLayout>
+
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

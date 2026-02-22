@@ -1,0 +1,1821 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".filter_product">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/greenmeee"
+        app:cardElevation="@dimen/_10sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/close_btn_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginTop="6dp"
+                android:drawableTint="@color/white"
+                android:drawableStart="@drawable/back_left" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_11sdp"
+                android:fontFamily="@font/dm_serif_display"
+                android:text="Filter"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_18ssp" />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="@dimen/_15sdp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnReset"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_background22"
+                android:textSize="18sp"
+
+                android:fontFamily="@font/dm_serif_display"
+                android:padding="10dp"
+                android:text="Reset"
+                android:textColor="#16971B"
+                android:textStyle="bold" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnApply"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="2"
+                android:background="@drawable/btn_background"
+                android:fontFamily="@font/dm_serif_display"
+                android:padding="10dp"
+                android:textSize="18sp"
+                android:text="Apply Filter"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_43sdp">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#AFF1B1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/gender_click"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/down_key"
+                    android:fontFamily="@font/caudex"
+                    android:padding="10dp"
+                    android:text="Gender"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_16ssp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/colour_click"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/down_key"
+                    android:fontFamily="@font/caudex"
+                    android:padding="10dp"
+                    android:text="Color"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_16ssp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/brand_click"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/down_key"
+                    android:fontFamily="@font/caudex"
+                    android:padding="10dp"
+                    android:text="Brand"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_16ssp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/price_click"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/down_key"
+                    android:fontFamily="@font/caudex"
+                    android:padding="10dp"
+                    android:text="Price"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_16ssp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/discount_click"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/down_key"
+                    android:fontFamily="@font/caudex"
+                    android:padding="10dp"
+                    android:text="Discount"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_16ssp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:layout_marginBottom="16dp"
+                android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/gender_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+
+                    <RadioGroup
+                        android:id="@+id/genderRadioGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <RadioButton
+                            android:id="@+id/radioButtonMale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/caudex"
+                            android:text="Men"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            android:theme="@style/MyRadioButton" />
+
+
+                        <RadioButton
+                            android:id="@+id/radioButtonFemale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/caudex"
+                            android:text="Female"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            android:theme="@style/MyRadioButton" />
+
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/color_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="80dp"
+                    android:visibility="gone">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp">
+
+                        <CheckBox
+                            android:id="@+id/checkbox_color1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/checkbox_selector"
+                            android:fontFamily="@font/caudex"
+                            android:text="Aquamarine"
+                            android:textSize="@dimen/_14ssp"
+                            android:theme="@style/CustomCheckBox" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="30dp"
+                            android:background="@drawable/circle_vector"
+                            android:backgroundTint="#7FFFD4" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp">
+
+                        <CheckBox
+                            android:id="@+id/checkbox_color2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/checkbox_selector"
+                            android:fontFamily="@font/caudex"
+                            android:text="Azure"
+                            android:textSize="@dimen/_14ssp"
+                            android:theme="@style/CustomCheckBox" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="30dp"
+                            android:background="@drawable/circle_vector"
+                            android:backgroundTint="#007FFF" />
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp">
+
+                        <CheckBox
+                            android:id="@+id/checkbox_color3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/checkbox_selector"
+                            android:fontFamily="@font/caudex"
+                            android:text="Black"
+                            android:textSize="@dimen/_14ssp"
+                            android:theme="@style/CustomCheckBox" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="30dp"
+                            android:background="@drawable/circle_vector"
+                            android:backgroundTint="#000000" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp">
+
+                        <CheckBox
+                            android:id="@+id/checkbox_color4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/checkbox_selector"
+                            android:fontFamily="@font/caudex"
+                            android:text="Brown"
+                            android:textSize="@dimen/_14ssp"
+                            android:textColor="@color/black"
+                            android:theme="@style/CustomCheckBox" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="30dp"
+                            android:background="@drawable/circle_vector"
+                            android:backgroundTint="#964B00" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp">
+
+                        <CheckBox
+                            android:id="@+id/checkbox_color5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/checkbox_selector"
+                            android:fontFamily="@font/caudex"
+                            android:text="Coral"
+                            android:textSize="@dimen/_14ssp"
+                            android:textColor="@color/black"
+                            android:theme="@style/CustomCheckBox" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="30dp"
+                            android:background="@drawable/circle_vector"
+                            android:backgroundTint="#FF7F50" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp">
+
+                        <CheckBox
+                            android:id="@+id/checkbox_color6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/checkbox_selector"
+                            android:fontFamily="@font/caudex"
+                            android:text="Crimson"
+                            android:textSize="@dimen/_14ssp"
+                            android:textColor="@color/black"
+                            android:theme="@style/CustomCheckBox" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="30dp"
+                            android:background="@drawable/circle_vector"
+                            android:backgroundTint="#DC143C" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp">
+
+                        <CheckBox
+                            android:id="@+id/checkbox_color7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/checkbox_selector"
+                            android:fontFamily="@font/caudex"
+                            android:text="Cyan"
+                            android:textSize="@dimen/_14ssp"
+                            android:textColor="@color/black"
+                            android:theme="@style/CustomCheckBox" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="30dp"
+                            android:background="@drawable/circle_vector"
+                            android:backgroundTint="#00FFFF" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp">
+
+                        <CheckBox
+                            android:id="@+id/checkbox_color8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/checkbox_selector"
+                            android:fontFamily="@font/caudex"
+                            android:text="Golden"
+                            android:textSize="@dimen/_14ssp"
+                            android:textColor="@color/black"
+                            android:theme="@style/CustomCheckBox" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="30dp"
+                            android:background="@drawable/circle_vector"
+                            android:backgroundTint="#FFD700" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp">
+
+                        <CheckBox
+                            android:id="@+id/checkbox_color9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/checkbox_selector"
+                            android:fontFamily="@font/caudex"
+                            android:text="Gray"
+                            android:textSize="@dimen/_14ssp"
+                            android:textColor="@color/black"
+                            android:theme="@style/CustomCheckBox" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="30dp"
+                            android:background="@drawable/circle_vector"
+                            android:backgroundTint="#808080" />
+                    </RelativeLayout>
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp">
+
+                        <CheckBox
+                            android:id="@+id/checkbox_color10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/checkbox_selector"
+                            android:fontFamily="@font/caudex"
+                            android:text="Green"
+                            android:textSize="@dimen/_14ssp"
+                            android:textColor="@color/black"
+                            android:theme="@style/CustomCheckBox" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="30dp"
+                            android:background="@drawable/circle_vector"
+                            android:backgroundTint="#008000" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp">
+
+                        <CheckBox
+                            android:id="@+id/checkbox_color11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/checkbox_selector"
+                            android:fontFamily="@font/caudex"
+                            android:text="Hot Pink"
+                            android:textSize="@dimen/_14ssp"
+                            android:textColor="@color/black"
+                            android:theme="@style/CustomCheckBox" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="30dp"
+                            android:background="@drawable/circle_vector"
+                            android:backgroundTint="#FF69B4" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp">
+
+                        <CheckBox
+                            android:id="@+id/checkbox_color12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/checkbox_selector"
+                            android:fontFamily="@font/caudex"
+                            android:text="Lime"
+                            android:textSize="@dimen/_14ssp"
+                            android:textColor="@color/black"
+                            android:theme="@style/CustomCheckBox" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="30dp"
+                            android:background="@drawable/circle_vector"
+                            android:backgroundTint="#32CD32" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp">
+
+                        <CheckBox
+                            android:id="@+id/checkbox_color13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/checkbox_selector"
+                            android:fontFamily="@font/caudex"
+                            android:text="Magent"
+                            android:textSize="@dimen/_14ssp"
+                            android:textColor="@color/black"
+                            android:theme="@style/CustomCheckBox" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="30dp"
+                            android:background="@drawable/circle_vector"
+                            android:backgroundTint="#FF00FF" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp">
+
+                        <CheckBox
+                            android:id="@+id/checkbox_color14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/checkbox_selector"
+                            android:fontFamily="@font/caudex"
+                            android:text="Maroon"
+                            android:textSize="@dimen/_14ssp"
+                            android:textColor="@color/black"
+                            android:theme="@style/CustomCheckBox" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="30dp"
+                            android:background="@drawable/circle_vector"
+                            android:backgroundTint="#800000" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp">
+
+                        <CheckBox
+                            android:id="@+id/checkbox_color15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/checkbox_selector"
+                            android:fontFamily="@font/caudex"
+                            android:text="Navy Blue"
+                            android:textSize="@dimen/_14ssp"
+                            android:textColor="@color/black"
+                            android:theme="@style/CustomCheckBox" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="30dp"
+                            android:background="@drawable/circle_vector"
+                            android:backgroundTint="#000080" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp">
+
+                        <CheckBox
+                            android:id="@+id/checkbox_color16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/checkbox_selector"
+                            android:fontFamily="@font/caudex"
+                            android:text="Olive"
+                            android:textSize="@dimen/_14ssp"
+                            android:textColor="@color/black"
+                            android:theme="@style/CustomCheckBox" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="30dp"
+                            android:background="@drawable/circle_vector"
+                            android:backgroundTint="#808000" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp">
+
+                        <CheckBox
+                            android:id="@+id/checkbox_color17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/checkbox_selector"
+                            android:fontFamily="@font/caudex"
+                            android:text="Orange"
+                            android:textSize="@dimen/_14ssp"
+                            android:textColor="@color/black"
+                            android:theme="@style/CustomCheckBox" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="30dp"
+                            android:background="@drawable/circle_vector"
+                            android:backgroundTint="#FFA500" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp">
+
+                        <CheckBox
+                            android:id="@+id/checkbox_color18"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/checkbox_selector"
+                            android:fontFamily="@font/caudex"
+                            android:text="Purple"
+                            android:textSize="@dimen/_14ssp"
+                            android:textColor="@color/black"
+                            android:theme="@style/CustomCheckBox" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="30dp"
+                            android:background="@drawable/circle_vector"
+                            android:backgroundTint="#A020F0" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp">
+
+                        <CheckBox
+                            android:id="@+id/checkbox_color19"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/checkbox_selector"
+                            android:fontFamily="@font/caudex"
+                            android:text="Red"
+                            android:textSize="@dimen/_14ssp"
+                            android:textColor="@color/black"
+                            android:theme="@style/CustomCheckBox" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="30dp"
+                            android:background="@drawable/circle_vector"
+                            android:backgroundTint="#FF0000" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp">
+
+                        <CheckBox
+                            android:id="@+id/checkbox_color20"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/checkbox_selector"
+                            android:fontFamily="@font/caudex"
+                            android:text="Royal Blue"
+                            android:textSize="@dimen/_14ssp"
+                            android:textColor="@color/black"
+                            android:theme="@style/CustomCheckBox" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="30dp"
+                            android:background="@drawable/circle_vector"
+                            android:backgroundTint="#4169E1" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp">
+
+                        <CheckBox
+                            android:id="@+id/checkbox_color21"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/checkbox_selector"
+                            android:fontFamily="@font/caudex"
+                            android:text="Silver"
+                            android:textSize="@dimen/_14ssp"
+                            android:textColor="@color/black"
+                            android:theme="@style/CustomCheckBox" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="30dp"
+                            android:background="@drawable/circle_vector"
+                            android:backgroundTint="#C0C0C0" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp">
+
+                        <CheckBox
+                            android:id="@+id/checkbox_color22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/checkbox_selector"
+                            android:fontFamily="@font/caudex"
+                            android:text="Teal"
+                            android:textSize="@dimen/_14ssp"
+                            android:textColor="@color/black"
+                            android:theme="@style/CustomCheckBox" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="30dp"
+                            android:background="@drawable/circle_vector"
+                            android:backgroundTint="#008080" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp">
+
+                        <CheckBox
+                            android:id="@+id/checkbox_color23"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/checkbox_selector"
+                            android:fontFamily="@font/caudex"
+                            android:text="Wheat"
+                            android:textSize="@dimen/_14ssp"
+                            android:textColor="@color/black"
+                            android:theme="@style/CustomCheckBox" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="30dp"
+                            android:background="@drawable/circle_vector"
+                            android:backgroundTint="#F5DEB3" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp">
+
+                        <CheckBox
+                            android:id="@+id/checkbox_color24"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/checkbox_selector"
+                            android:fontFamily="@font/gelasio"
+                            android:text="White"
+                            android:textSize="@dimen/_14ssp"
+                            android:textColor="@color/black"
+                            android:theme="@style/CustomCheckBox" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="30dp"
+                            android:background="@drawable/circle_vector"
+                            android:backgroundTint="#FFFFFF" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp">
+
+                        <CheckBox
+                            android:id="@+id/checkbox_color25"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/checkbox_selector"
+                            android:fontFamily="@font/gelasio"
+                            android:text="Yellow"
+                            android:textSize="@dimen/_14ssp"
+                            android:textColor="@color/black"
+                            android:theme="@style/CustomCheckBox" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="30dp"
+                            android:background="@drawable/circle_vector"
+                            android:backgroundTint="#FFFF00" />
+                    </RelativeLayout>
+
+
+
+                    </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/brand_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="80dp"
+
+                    android:visibility="gone">
+
+
+                    <RadioGroup
+                        android:id="@+id/brandRadioGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/dm_serif_display"
+                            android:text="A"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_21ssp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/columan_vector"
+                            />
+
+                        <RadioButton
+                            android:id="@+id/Apple"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/caudex"
+                            android:text="Apple"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            android:theme="@style/MyRadioButton" />
+
+                        <RadioButton
+                            android:id="@+id/Adidas"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/caudex"
+                            android:text="Adidas"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            android:theme="@style/MyRadioButton" />
+
+                        <RadioButton
+                            android:id="@+id/Adda"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/caudex"
+                            android:text="Adda"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            android:theme="@style/MyRadioButton" />
+
+                        <RadioButton
+                            android:id="@+id/Asian"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/caudex"
+                            android:text="Asian"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            android:theme="@style/MyRadioButton" />
+
+                        <RadioButton
+                            android:id="@+id/Arata"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/caudex"
+                            android:text="Arata"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            android:theme="@style/MyRadioButton" />
+
+                        <!-- B header -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/dm_serif_display"
+                            android:text="B"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_21ssp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/columan_vector"
+                    />
+
+                        <RadioButton
+                            android:id="@+id/BaccaBucci"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/caudex"
+                            android:text="Bacca Bucci"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            android:theme="@style/MyRadioButton" />
+
+                        <RadioButton
+                            android:id="@+id/Biba"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/caudex"
+                            android:text="Biba"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            android:theme="@style/MyRadioButton" />
+
+                        <RadioButton
+                            android:id="@+id/Blackberrys"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/caudex"
+                            android:text="Blackberrys"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            android:theme="@style/MyRadioButton" />
+
+                        <RadioButton
+                            android:id="@+id/Bata"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/caudex"
+                            android:text="Bata"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            android:theme="@style/MyRadioButton" />
+
+
+                        <RadioButton
+                            android:id="@+id/Boat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/caudex"
+                            android:text="Boat"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            android:theme="@style/MyRadioButton" />
+
+                        <!-- C header -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/dm_serif_display"
+                            android:text="C"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_21ssp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/columan_vector"
+                            />
+                        <RadioButton
+                            android:id="@+id/Cadbury"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/caudex"
+                            android:text="Cadbury"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            android:theme="@style/MyRadioButton" />
+
+                        <RadioButton
+                            android:id="@+id/Cartier"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/caudex"
+                            android:text="Cartier"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            android:theme="@style/MyRadioButton" />
+
+                        <RadioButton
+                            android:id="@+id/Charlie_Bear"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/caudex"
+                            android:text="Charlie Bear"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            android:theme="@style/MyRadioButton" />
+
+                        <RadioButton
+                            android:id="@+id/Crocs"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/caudex"
+                            android:text="Crocs"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            android:theme="@style/MyRadioButton" />
+
+                        <!-- D header -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/dm_serif_display"
+                            android:text="D"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_21ssp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/columan_vector"
+                            />
+
+                        <RadioButton
+                            android:id="@+id/Denill"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/caudex"
+                            android:text="Denill"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            android:theme="@style/MyRadioButton" />
+
+                        <RadioButton
+                            android:id="@+id/Denham"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/caudex"
+                            android:text="Denham"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            android:theme="@style/MyRadioButton" />
+
+                        <RadioButton
+                            android:id="@+id/Disney"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/caudex"
+                            android:text="Disney"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            android:theme="@style/MyRadioButton" />
+
+                        <RadioButton
+                            android:id="@+id/Doms"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/caudex"
+                            android:text="Doms"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            android:theme="@style/MyRadioButton" />
+
+                        <!-- G header -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/dm_serif_display"
+                            android:text="G"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_21ssp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/columan_vector"
+                            />
+
+                        <RadioButton
+                            android:id="@+id/GoldenGoose"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/caudex"
+                            android:text="Golden Goose"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            android:theme="@style/MyRadioButton" />
+
+                        <RadioButton
+                            android:id="@+id/GlazeJewelry"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/caudex"
+                            android:text="Glaze jewelry"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            android:theme="@style/MyRadioButton" />
+
+
+                        <RadioButton
+                            android:id="@+id/Gucci"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/caudex"
+                            android:text="Gucci"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            android:theme="@style/MyRadioButton" />
+
+                        <!-- H header -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/dm_serif_display"
+                            android:text="H"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_21ssp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/columan_vector"
+                            />
+
+                        <RadioButton
+                            android:id="@+id/H_M"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/caudex"
+                            android:text="H &amp; M"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            android:theme="@style/MyRadioButton" />
+
+                        <!-- J header -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/dm_serif_display"
+                            android:text="J"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_21ssp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/columan_vector"
+                            />
+
+                        <RadioButton
+                            android:id="@+id/Jordan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/caudex"
+                            android:text="Jordan"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            android:theme="@style/MyRadioButton" />
+
+                        <!-- L header -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/dm_serif_display"
+                            android:text="L"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_21ssp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/columan_vector"
+                            />
+
+                        <RadioButton
+                            android:id="@+id/Lee"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/caudex"
+                            android:text="Lee"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            android:theme="@style/MyRadioButton" />
+
+                        <RadioButton
+                            android:id="@+id/Lenskart"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/caudex"
+                            android:text="Lenskart"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            android:theme="@style/MyRadioButton" />
+
+                        <RadioButton
+                            android:id="@+id/Levis"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/caudex"
+                            android:text="Levi's"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            android:theme="@style/MyRadioButton" />
+
+                        <RadioButton
+                            android:id="@+id/Loreal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/caudex"
+                            android:text="Loreal"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            android:theme="@style/MyRadioButton" />
+
+                        <RadioButton
+                            android:id="@+id/Manish_Malhotra"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/caudex"
+                            android:text="Manish Malhotra"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            android:theme="@style/MyRadioButton" />
+
+                        <!-- M header -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/dm_serif_display"
+                            android:text="M"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_21ssp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/columan_vector"
+                            />
+
+                        <RadioButton
+                            android:id="@+id/Marvel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/caudex"
+                            android:text="Marvel"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            android:theme="@style/MyRadioButton" />
+
+
+                        <RadioButton
+                            android:id="@+id/Mi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/caudex"
+                            android:text="Mi"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            android:theme="@style/MyRadioButton" />
+
+                        <RadioButton
+                            android:id="@+id/Motorola"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/caudex"
+                            android:text="Motorola"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            android:theme="@style/MyRadioButton" />
+
+                        <!-- N -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/dm_serif_display"
+                            android:text="N"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_21ssp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/columan_vector"
+                            />
+
+                        <RadioButton
+                            android:id="@+id/Nike"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/caudex"
+                            android:text="Nike"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            android:theme="@style/MyRadioButton" />
+
+                        <!-- O -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/dm_serif_display"
+                            android:text="O"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_21ssp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/columan_vector"
+                            />
+
+                        <RadioButton
+                            android:id="@+id/Oppo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/caudex"
+                            android:text="Oppo"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            android:theme="@style/MyRadioButton" />
+
+                        <!-- P -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/dm_serif_display"
+                            android:text="P"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_21ssp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/columan_vector"
+                            />
+
+                        <RadioButton
+                            android:id="@+id/Puma"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/caudex"
+                            android:text="Puma"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            android:theme="@style/MyRadioButton" />
+
+                        <!-- R -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/dm_serif_display"
+                            android:text="R"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_21ssp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/columan_vector"
+                            />
+
+                        <RadioButton
+                            android:id="@+id/Redmi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/caudex"
+                            android:text="Redmi"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            android:theme="@style/MyRadioButton" />
+
+                        <RadioButton
+                            android:id="@+id/Realme"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/caudex"
+                            android:text="Realme"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            android:theme="@style/MyRadioButton" />
+
+                        <RadioButton
+                            android:id="@+id/Rolex"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/caudex"
+                            android:text="Rolex"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            android:theme="@style/MyRadioButton" />
+
+                        <!-- S -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/dm_serif_display"
+                            android:text="S"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_21ssp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/columan_vector"
+                            />
+
+                        <RadioButton
+                            android:id="@+id/Samsung"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/caudex"
+                            android:text="Samsung"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            android:theme="@style/MyRadioButton" />
+
+                        <RadioButton
+                            android:id="@+id/Sugar_Cosmetics"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/caudex"
+                            android:text="Sugar Cosmetics"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            android:theme="@style/MyRadioButton" />
+
+                        <!-- Z -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/dm_serif_display"
+                            android:text="Z"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_21ssp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/columan_vector"
+                            />
+
+                        <RadioButton
+                            android:id="@+id/Zara"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/caudex"
+                            android:text="Zara"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            android:theme="@style/MyRadioButton" />
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/price_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    android:visibility="gone">
+
+
+
+                    <CheckBox
+                        android:id="@+id/checkbox_brand1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/checkbox_selector"
+                        android:fontFamily="@font/caudex"
+                        android:padding="5dp"
+                        android:text="Below Rs.500"
+                        android:textSize="@dimen/_14ssp"
+                        android:theme="@style/CustomCheckBox" />
+
+
+
+
+                    <CheckBox
+                        android:id="@+id/checkbox_brand2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/checkbox_selector"
+                        android:fontFamily="@font/caudex"
+                        android:text="Rs.500-1000"
+                        android:padding="5dp"
+
+                        android:textSize="@dimen/_14ssp"
+                        android:theme="@style/CustomCheckBox" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_brand3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/checkbox_selector"
+                        android:fontFamily="@font/caudex"
+                        android:text="Rs.1001-1500"
+                        android:padding="5dp"
+
+                        android:textSize="@dimen/_14ssp"
+                        android:theme="@style/CustomCheckBox" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_brand4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/checkbox_selector"
+                        android:fontFamily="@font/caudex"
+                        android:text="Rs.1501-2000"
+                        android:padding="5dp"
+
+                        android:textSize="@dimen/_14ssp"
+                        android:theme="@style/CustomCheckBox" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_brand5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/checkbox_selector"
+                        android:fontFamily="@font/caudex"
+                        android:text="Rs.2001-2500"
+                        android:padding="5dp"
+
+                        android:textSize="@dimen/_14ssp"
+                        android:theme="@style/CustomCheckBox" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_brand6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/checkbox_selector"
+                        android:fontFamily="@font/caudex"
+                        android:text="Rs.2501-5000"
+                        android:padding="5dp"
+
+                        android:textSize="@dimen/_14ssp"
+                        android:theme="@style/CustomCheckBox" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_brand7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/checkbox_selector"
+                        android:fontFamily="@font/caudex"
+                        android:text="Above Rs.5000"
+                        android:padding="5dp"
+
+                        android:textSize="@dimen/_14ssp"
+                        android:theme="@style/CustomCheckBox" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_brand8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/checkbox_selector"
+                        android:fontFamily="@font/caudex"
+                        android:padding="5dp"
+
+                        android:text="Above Rs.10000"
+                        android:textSize="@dimen/_14ssp"
+                        android:theme="@style/CustomCheckBox" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_brand9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/checkbox_selector"
+                        android:fontFamily="@font/caudex"
+                        android:padding="5dp"
+                        android:text="Above Rs.50000"
+                        android:textSize="@dimen/_14ssp"
+                        android:theme="@style/CustomCheckBox" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/discount_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+
+                    <CheckBox
+                        android:id="@+id/checkbox_discount1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/checkbox_selector"
+                        android:fontFamily="@font/caudex"
+                        android:text="0-20 %"
+                        android:padding="5dp"
+                        android:textSize="@dimen/_14ssp"
+                        android:theme="@style/CustomCheckBox" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_discount2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/checkbox_selector"
+                        android:fontFamily="@font/caudex"
+                        android:text="21-30 %"
+                        android:padding="5dp"
+
+                        android:textSize="@dimen/_14ssp"
+                        android:theme="@style/CustomCheckBox" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_discount3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/checkbox_selector"
+                        android:fontFamily="@font/caudex"
+                        android:text="31-40 %"
+                        android:padding="5dp"
+
+                        android:textSize="@dimen/_14ssp"
+                        android:theme="@style/CustomCheckBox" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_discount4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/checkbox_selector"
+                        android:fontFamily="@font/caudex"
+                        android:text="41-50 %"
+                        android:padding="5dp"
+
+                        android:textSize="@dimen/_14ssp"
+                        android:theme="@style/CustomCheckBox" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_discount5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/checkbox_selector"
+                        android:fontFamily="@font/caudex"
+                        android:text="51-80 %"
+                        android:padding="5dp"
+
+                        android:textSize="@dimen/_14ssp"
+                        android:theme="@style/CustomCheckBox" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_discount6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/checkbox_selector"
+                        android:fontFamily="@font/caudex"
+                        android:text="81-99 %"
+                        android:padding="5dp"
+
+                        android:textSize="@dimen/_14ssp"
+                        android:theme="@style/CustomCheckBox" />
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+
+
+
+
+        </LinearLayout>
+
+
+</RelativeLayout>

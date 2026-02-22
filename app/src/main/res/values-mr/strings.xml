@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="signIn">तुमच्या खात्यात साइन इन करा</string>
+    <string name="Viewyourwishlist">◆ तुमची इच्छा यादी पहा</string>
+    <string name="find">◆ मागील खरेदी शोधा आणि पुनर्क्रमित करा</string>
+    <string name="track">◆ तुमच्या खरेदीचा मागोवा घ्या</string>
+    <string name="already">आधीच एक ग्राहक? साइन इन करा</string>
+    <string name="newAc">UpTrend वर नवीन? खाते तयार करा</string>
+    <string name="skip">साइन इन वगळा</string>
+
+    <string name="welcome">स्वागत</string>
+    <string name="createAc">खाते तयार करा.</string>
+    <string name="newAcm">अपट्रेंडसाठी नवीन?</string>
+    <string name="firstLastName">नाव आणि आडनाव</string>
+    <string name="mobileNo">मोबाईल नंबर</string>
+    <string name="email">ईमेल</string>
+    <string name="password">पासवर्ड</string>
+    <string name="passwordMsg">पासवर्ड किमान 6 वर्णांचा असणे आवश्यक आहे.</string>
+    <string name="showPass">संकेतशब्द दर्शवा</string>
+
+
+    <string name="signIn2">साइन इन करा.</string>
+    <string name="already2">आधीच एक ग्राहक?</string>
+    <string name="forget">पासवर्ड विसरा</string>
+
+
+    <string name="forgetpass">तुमचा पासवर्ड विसरलात</string>
+    <string name="massage1">कृपया तुमची पासवर्ड रीसेट माहिती पाठवलेली ईमेल पत्ता प्रविष्ट करा</string>
+    <string name="enter1">ईमेल पत्ता प्रविष्ट करा</string>
+    <string name="requestLink">दुवा रीसेट करण्याची विनंती करा</string>
+    <string name="back1">साइन इन करण्यासाठी परत</string>
+    <string name="Instruction">सूचना</string>
+    <string name="Instruction1">1. तुम्ही तुमच्या साइन इन केलेल्या आयडीचा ईमेल येथे टाका.</string>
+    <string name="Instruction2">2. रीसेट बटणावर क्लिक करा आणि तुमचा ईमेल तपासा.</string>
+    <string name="Instruction3">3. तुमचा ईमेल उघडा आणि पासवर्ड रीसेट करण्याची लिंक तपासा.</string>
+    <string name="Instruction4">4. दुव्यावर क्लिक करा आणि तुमचा पासवर्ड रीसेट करा.</string>
+    <string name="Instruction5">5. तुम्ही तुमचा नवीन पासवर्ड साइन इन करून भरू शकता.</string>
+</resources>

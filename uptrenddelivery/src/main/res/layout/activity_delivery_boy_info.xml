@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F8FFFB">
+
+    <!-- Top Header -->
+    <RelativeLayout
+        android:id="@+id/top_header"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#4CAF50">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Up Trend Delivery"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/caudex"
+            android:textColor="@android:color/white"
+            android:layout_centerInParent="true" />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="180dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+            <!-- Name -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Full Name"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/caudex"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/txtName"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#FFFFFF"
+                android:hint="Enter your full name"
+                android:padding="16dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/caudex"
+                android:layout_marginBottom="20dp" />
+
+            <!-- DOB -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date of Birth"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/caudex"
+                android:layout_marginBottom="8dp" />
+
+            <DatePicker
+                android:id="@+id/datePicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp" />
+
+            <TextView
+                android:id="@+id/txtAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="26/06/2004"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/caudex"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Address -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delivery Address"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/caudex"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/txtAddress"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#FFFFFF"
+                android:hint="House no, road, area"
+                android:gravity="top"
+                android:padding="16dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/caudex"
+                android:layout_marginBottom="20dp" />
+
+            <!-- Vehicle Number -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vehicle Number"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/caudex"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/txtVehicleNo"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#FFFFFF"
+                android:hint="e.g. MH04AB1234"
+                android:padding="16dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/caudex"
+                android:inputType="textCapCharacters"
+                android:layout_marginBottom="20dp" />
+
+            <!-- State & City Dropdowns -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                app:boxBackgroundMode="filled"
+                app:boxBackgroundColor="#FFFFFF">
+
+                <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                    android:id="@+id/spinnerState"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:hint="Select State"
+                    android:fontFamily="@font/caudex"
+                    android:textSize="16sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                app:boxBackgroundMode="filled"
+                app:boxBackgroundColor="#FFFFFF">
+
+                <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                    android:id="@+id/spinnerCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:hint="Select City"
+                    android:fontFamily="@font/caudex"
+                    android:textSize="16sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Next Button -->
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="NEXT"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/caudex"
+                android:backgroundTint="#4CAF50"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

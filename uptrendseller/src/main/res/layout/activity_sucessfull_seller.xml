@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFFFF">
+
+    <!-- Subtle Gradient Background -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_success_bg" />
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/success_anim"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        app:lottie_rawRes="@raw/celebrate"
+        app:lottie_autoPlay="false"
+        app:lottie_loop="true"
+        app:lottie_speed="1.2" />
+
+    <!-- Success Icon (Simple Checkmark Circle) -->
+    <ImageView
+        android:id="@+id/imgSuccessIcon"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp"
+        android:src="@drawable/succes_vector1"
+        android:scaleX="0"
+        android:scaleY="0"
+        android:alpha="0" />
+
+    <!-- Success Title -->
+    <TextView
+        android:id="@+id/txtSuccessTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgSuccessIcon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Account Created!"
+        android:textColor="#2E7D32"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/caudex"
+        android:alpha="0" />
+
+    <!-- Success Message -->
+    <TextView
+        android:id="@+id/txtSuccessMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtSuccessTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:text="Congratulations!\nYour seller account has been successfully created."
+        android:textColor="#424242"
+        android:textSize="17sp"
+        android:gravity="center"
+        android:lineSpacingExtra="8dp"
+        android:fontFamily="@font/brygada_1918"
+        android:alpha="0" />
+
+    <!-- Redirect Hint -->
+    <TextView
+        android:id="@+id/txtRedirect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"
+        android:text="Redirecting to dashboard..."
+        android:textColor="#78909C"
+        android:textSize="15sp"
+        android:fontFamily="@font/brygada_1918"
+        android:alpha="0" />
+
+</RelativeLayout>

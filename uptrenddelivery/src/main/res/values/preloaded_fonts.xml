@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/brygada_1918</item>
+        <item>@font/caudex</item>
+        <item>@font/gelasio</item>
+        <item>@font/miltonian_tattoo</item>
+    </array>
+</resources>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.UpTrend"
+        tools:targetApi="31">
+        <activity
+            android:name=".FullScreenImageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".payment_add_to_cart"
+            android:exported="false" />
+        <activity
+            android:name=".payment_product"
+            android:exported="false" />
+        <activity
+            android:name=".return_order2"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".splash_return_pd"
+            android:exported="false" />
+        <activity
+            android:name=".cancel_order"
+            android:exported="false" />
+        <activity
+            android:name=".return_order"
+            android:exported="false" />
+        <activity
+            android:name=".open_category_product"
+            android:exported="false" />
+        <activity
+            android:name=".open_brand_product"
+            android:exported="false" />
+        <activity
+            android:name=".filter_product"
+            android:exported="false" />
+        <activity
+            android:name=".search_product"
+            android:exported="false" />
+        <activity
+            android:name=".notification"
+            android:exported="false" />
+        <activity
+            android:name=".open_history_pd"
+            android:exported="false" />
+        <activity
+            android:name=".rating_products"
+            android:exported="false" />
+        <activity
+            android:name=".complete_order"
+            android:exported="false" />
+        <activity
+            android:name=".user_profile"
+            android:exported="false" />
+        <activity
+            android:name=".wishlist_poduct"
+            android:exported="false" />
+        <activity
+            android:name=".size_chart_shoes"
+            android:exported="false" />
+        <activity
+            android:name=".size_chart_shirts"
+            android:exported="false" />
+        <activity
+            android:name=".size_chart_jeans"
+            android:exported="false" />
+        <activity
+            android:name=".address_A2C"
+            android:exported="false" />
+        <activity
+            android:name=".open_product"
+            android:exported="true">
+
+            <!-- Custom scheme -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="product"
+                    android:scheme="uptrend" />
+            </intent-filter>
+
+            <!-- HTTPS link -->
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="uptrend.com"
+                    android:pathPrefix="/product/"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".account_user"
+            android:exported="false" />
+        <activity
+            android:name=".add_to_cart_product"
+            android:exported="false" />
+        <activity
+            android:name=".category_product"
+            android:exported="false" />
+        <activity
+            android:name=".terms_condition"
+            android:exported="false" />
+        <activity
+            android:name=".privacy_policy_CA"
+            android:exported="false" />
+        <activity
+            android:name=".forgot_password"
+            android:exported="false" />
+        <activity
+            android:name=".signUp_and_logIn_page"
+            android:exported="false" />
+        <activity
+            android:name=".skip_signin"
+            android:exported="false" />
+        <activity
+            android:name=".home"
+            android:exported="false" />
+        <activity
+            android:name=".select_language"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="www.uptrend.google.com"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="signIn">તમારા એકાઉન્ટમાં સાઇન ઇન કરો</string>
+    <string name="Viewyourwishlist">◆ તમારી ઇચ્છા યાદી જુઓ</string>
+    <string name="find">◆ ભૂતકાળની ખરીદીઓ શોધો અને ફરીથી ગોઠવો</string>
+    <string name="track">◆ તમારી ખરીદીઓને ટ્રૅક કરો</string>
+    <string name="already">પહેલેથી જ ગ્રાહક છે? સાઇન ઇન કરો</string>
+    <string name="newAc">UpTrend માટે નવા છો? એક ખાતુ બનાવો</string>
+    <string name="skip">સાઇન ઇન કરવાનું છોડો</string>
+
+
+    <string name="welcome">સ્વાગત છે</string>
+    <string name="createAc">ખાતું બનાવો.</string>
+    <string name="newAcm">UpTrend માટે નવા છો?</string>
+    <string name="firstLastName">નામ અને અટક</string>
+    <string name="mobileNo">મોબાઈલ નમ્બર</string>
+    <string name="email">ઈમેલ</string>
+    <string name="password">પાસવર્ડ</string>
+    <string name="passwordMsg">પાસવર્ડ ઓછામાં ઓછો 6 અક્ષરનો હોવો જોઈએ.</string>
+    <string name="showPass">પાસવર્ડ બતાવો</string>
+
+    <string name="signIn2">સાઇન ઇન કરો.</string>
+    <string name="already2">પહેલેથી જ ગ્રાહક છે?</string>
+    <string name="forget">પાસવર્ડ ભૂલી જાઓ</string>
+
+    <string name="forgetpass">તમારો પાસવર્ડ ભૂલી ગયા છો</string>
+    <string name="massage1">કૃપા કરીને ઇમેઇલ સરનામું દાખલ કરો કે જેના પર તમે તમારી પાસવર્ડ રીસેટ માહિતી મોકલવા માંગો છો</string>
+    <string name="enter1">ઇમેઇલ સરનામું દાખલ કરો</string>
+    <string name="requestLink">રીસેટ લિંકની વિનંતી કરો</string>
+    <string name="back1">સાઇન ઇન કરવા માટે પાછા</string>
+    <string name="Instruction">સૂચના</string>
+    <string name="Instruction1">1. તમે અહીં તમારા સાઇન ઇન કરેલ આઈડીનો ઈમેલ દાખલ કરો.</string>
+    <string name="Instruction2">2. રીસેટ બટન પર ક્લિક કરો અને તમારું ઈમેલ તપાસો.</string>
+    <string name="Instruction3">3. તમારો ઈમેલ ખોલો અને પાસવર્ડ રીસેટ કરવાની લિંક તપાસો.</string>
+    <string name="Instruction4">4. લિંક પર ક્લિક કરો અને તમારો પાસવર્ડ રીસેટ કરો.</string>
+    <string name="Instruction5">5. તમે સાઇન ઇનમાં તમારો નવો પાસવર્ડ ભરી શકો છો.</string>
+
+
+</resources>

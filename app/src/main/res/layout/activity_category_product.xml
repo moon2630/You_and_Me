@@ -1,0 +1,911 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".category_product">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/greenmeee"
+        app:cardElevation="@dimen/_10sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/close_btn_categories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginTop="6dp"
+                android:drawableTint="@color/white"
+                android:drawableStart="@drawable/back_left" />
+
+
+            <TextView
+                android:id="@+id/Brand_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_11sdp"
+                android:fontFamily="@font/dm_serif_display"
+                android:text="Categories"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_18ssp" />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_13sdp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:id="@+id/bottom_nav_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/bottom_background"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/home2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:drawableTop="@drawable/home_vector"
+                android:drawablePadding="4dp"
+                android:drawableTint="#100101"
+                android:focusable="true"
+                android:fontFamily="@font/caudex"
+                android:gravity="center_horizontal"
+                android:text="Home"
+                android:textColor="#100101"
+                android:textSize="12sp"
+               />
+
+            <TextView
+                android:id="@+id/categories2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:textStyle="bold"
+                android:drawableTop="@drawable/vector_categories"
+                android:drawablePadding="4dp"
+                android:drawableTint="#3ABE40"
+                android:focusable="true"
+                android:fontFamily="@font/caudex"
+                android:gravity="center_horizontal"
+                android:text="Categories"
+                android:textColor="#3ABE40"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/account2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:drawableTop="@drawable/account_vector"
+                android:drawablePadding="4dp"
+                android:drawableTint="#100101"
+                android:focusable="true"
+                android:fontFamily="@font/caudex"
+                android:gravity="center_horizontal"
+                android:text="Account"
+                android:textColor="#100101"
+                android:textSize="12sp" />
+
+
+            <TextView
+                android:id="@+id/bag2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:drawableTop="@drawable/add_to_bag_vector"
+                android:drawablePadding="4dp"
+                android:drawableTint="#100101"
+                android:focusable="true"
+                android:fontFamily="@font/caudex"
+                android:gravity="center_horizontal"
+                android:text="Bag"
+                android:textColor="#100101"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/add_to_cart_notification2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="292dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/circle_vector2"
+            android:backgroundTint="#33B938"
+            android:fontFamily="@font/dm_serif_display"
+            android:text=""
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_45sdp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+
+                <RelativeLayout
+                    android:id="@+id/layoutShoes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_nike"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:background="@drawable/brand_background"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/_100sdp"
+                        app:cardElevation="@dimen/_5sdp">
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/brand_background"
+                            android:padding="15dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/category_img1" />
+
+
+                        </FrameLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/card_nike"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/dm_serif_display"
+                        android:text="Shoes"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15ssp" />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/layoutMobiles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_mobile"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:background="@drawable/brand_background"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/_100sdp"
+                        app:cardElevation="@dimen/_5sdp">
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/brand_background"
+                            android:paddingStart="10dp"
+                            android:paddingTop="25dp"
+                            android:paddingEnd="10dp"
+                            android:paddingBottom="25dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/category_img4" />
+
+
+                        </FrameLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/card_mobile"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/dm_serif_display"
+                        android:text="Mobiles"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15ssp" />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/layoutHoodies"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_hoodie"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:background="@drawable/brand_background"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/_100sdp"
+                        app:cardElevation="@dimen/_5sdp">
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/brand_background"
+                            android:padding="10dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/category_img5" />
+
+
+                        </FrameLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/card_hoodie"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/dm_serif_display"
+                        android:text="Hoodies"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15ssp" />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <!-- Jewellery -->
+                <RelativeLayout
+                    android:id="@+id/layoutJewellery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_jewellery"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:background="@drawable/brand_background"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/_100sdp"
+                        app:cardElevation="@dimen/_5sdp">
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/brand_background"
+                            android:paddingStart="15dp"
+                            android:paddingTop="25dp"
+                            android:paddingEnd="15dp"
+                            android:paddingBottom="25dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/category_img31" />
+
+                        </FrameLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/card_jewellery"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/dm_serif_display"
+                        android:text="Jewellery"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15ssp" />
+                </RelativeLayout>
+
+                <!-- Shirt -->
+                <RelativeLayout
+                    android:id="@+id/layoutShirt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_shirt"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:background="@drawable/brand_background"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/_100sdp"
+                        app:cardElevation="@dimen/_5sdp">
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/brand_background"
+                            android:padding="15dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/category_img15" />
+
+                        </FrameLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/card_shirt"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/dm_serif_display"
+                        android:text="Shirts"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15ssp" />
+                </RelativeLayout>
+
+                <!-- Chocolates -->
+                <RelativeLayout
+                    android:id="@+id/layoutChocolates"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_chocolates"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:background="@drawable/brand_background"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/_100sdp"
+                        app:cardElevation="@dimen/_5sdp">
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/brand_background"
+                            android:paddingStart="20dp"
+                            android:paddingTop="25dp"
+                            android:paddingEnd="20dp"
+                            android:paddingBottom="25dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/category_img9" />
+
+                        </FrameLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/card_chocolates"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/dm_serif_display"
+                        android:text="Chocolates"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15ssp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <!-- Jeans Pant -->
+                <RelativeLayout
+                    android:id="@+id/layoutJeansPant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_jeanspant"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:background="@drawable/brand_background"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/_100sdp"
+                        app:cardElevation="@dimen/_5sdp">
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/brand_background"
+                            android:padding="15dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/category_img27" />
+                        </FrameLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/card_jeanspant"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/dm_serif_display"
+                        android:text="Jeans Pant"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15ssp" />
+                </RelativeLayout>
+
+                <!-- Teddy Bear -->
+                <RelativeLayout
+                    android:id="@+id/layoutTeddyBear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_teddybear"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:background="@drawable/brand_background"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/_100sdp"
+                        app:cardElevation="@dimen/_5sdp">
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/brand_background"
+                            android:padding="15dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/category_img16" />
+                        </FrameLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/card_teddybear"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/dm_serif_display"
+                        android:text="Teddy Bear"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14ssp" />
+                </RelativeLayout>
+
+                <!-- Beauty -->
+                <RelativeLayout
+                    android:id="@+id/layoutBeauty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_beauty"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:background="@drawable/brand_background"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/_100sdp"
+                        app:cardElevation="@dimen/_5sdp">
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/brand_background"
+                            android:padding="15dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/category_img10" />
+                        </FrameLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/card_beauty"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/dm_serif_display"
+                        android:text="Beauty"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15ssp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <!-- Watches -->
+                <RelativeLayout
+                    android:id="@+id/layoutWatches"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_watches"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:background="@drawable/brand_background"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/_100sdp"
+                        app:cardElevation="@dimen/_5sdp">
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/brand_background"
+                            android:padding="15dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/category_img22" />
+                        </FrameLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/card_watches"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/dm_serif_display"
+                        android:text="Watches"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15ssp" />
+                </RelativeLayout>
+
+                <!-- Sports -->
+                <RelativeLayout
+                    android:id="@+id/layoutSports"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_sports"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:background="@drawable/brand_background"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/_100sdp"
+                        app:cardElevation="@dimen/_5sdp">
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/brand_background"
+                            android:paddingStart="15dp"
+                            android:paddingTop="25dp"
+                            android:paddingEnd="15dp"
+                            android:paddingBottom="25dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/category_img14" />
+                        </FrameLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/card_sports"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/dm_serif_display"
+                        android:text="Sports"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15ssp" />
+                </RelativeLayout>
+
+                <!-- Sarees -->
+                <RelativeLayout
+                    android:id="@+id/layoutSarees"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_sarees"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:background="@drawable/brand_background"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/_100sdp"
+                        app:cardElevation="@dimen/_5sdp">
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/brand_background"
+                            android:paddingStart="20dp"
+                            android:paddingTop="15dp"
+                            android:paddingEnd="20dp"
+                            android:paddingBottom="15dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/category_img43" />
+                        </FrameLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/card_sarees"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/dm_serif_display"
+                        android:text="Sarees"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15ssp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="100dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <!-- Watches -->
+                <RelativeLayout
+                    android:id="@+id/layoutGlasses"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_glasses"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:background="@drawable/brand_background"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/_100sdp"
+                        app:cardElevation="@dimen/_5sdp">
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/brand_background"
+                            android:paddingStart="10dp"
+                            android:paddingTop="15dp"
+                            android:paddingEnd="10dp"
+                            android:paddingBottom="15dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/category_img32" />
+                        </FrameLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/card_glasses"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/dm_serif_display"
+                        android:text="Glasses"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15ssp" />
+                </RelativeLayout>
+
+                <!-- Sports -->
+                <RelativeLayout
+                    android:id="@+id/layoutDresses"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_dresses"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:background="@drawable/brand_background"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/_100sdp"
+                        app:cardElevation="@dimen/_5sdp">
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/brand_background"
+                            android:paddingStart="20dp"
+                            android:paddingTop="15dp"
+                            android:paddingEnd="20dp"
+                            android:paddingBottom="15dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/category_img45" />
+                        </FrameLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/card_dresses"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/dm_serif_display"
+                        android:text="Dresses"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15ssp" />
+                </RelativeLayout>
+
+                <!-- Sarees -->
+                <RelativeLayout
+                    android:id="@+id/layoutArts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_arts"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:background="@drawable/brand_background"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/_100sdp"
+                        app:cardElevation="@dimen/_5sdp">
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/brand_background"
+                            android:paddingStart="15dp"
+                            android:paddingTop="25dp"
+                            android:paddingEnd="15dp"
+                            android:paddingBottom="25dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/category_img35" />
+                        </FrameLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/card_arts"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/dm_serif_display"
+                        android:text="Arts"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15ssp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

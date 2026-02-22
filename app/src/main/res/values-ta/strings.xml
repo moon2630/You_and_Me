@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="signIn"></string>
+    <string name="Viewyourwishlist"></string>
+    <string name="find"></string>
+    <string name="track"></string>
+    <string name="already"></string>
+    <string name="newAc"></string>
+    <string name="skip"></string>
+
+
+    <string name="welcome"></string>
+    <string name="createAc"></string>
+    <string name="newAcm"></string>
+    <string name="firstLastName"></string>
+    <string name="mobileNo"></string>
+    <string name="email"></string>
+    <string name="password"></string>
+    <string name="passwordMsg"></string>
+    <string name="showPass"></string>
+
+
+    <string name="signIn2"></string>
+    <string name="already2"></string>
+    <string name="forget"></string>
+
+
+    <string name="forgetpass"></string>
+    <string name="massage1"></string>
+    <string name="enter1"></string>
+    <string name="requestLink"></string>
+    <string name="back1"></string>
+    <string name="Instruction"></string>
+    <string name="Instruction1"></string>
+    <string name="Instruction2"></string>
+    <string name="Instruction3"></string>
+    <string name="Instruction4"></string>
+    <string name="Instruction5"></string>
+</resources>

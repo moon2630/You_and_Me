@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="green_meee">#1B5E20</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="green">#1C9721</color>
+    <color name="yellow">#FBE204</color>
+    <color name="transparent">#00FBE204</color>
+    <color name="red">#E30000</color>
+    <color name="blue55">#A4E1EA</color>
+    <color name="blue">#1B83D6</color>
+    <color name="orange3333">#FF9800</color>
+
+
+
+    //indicator color
+    <color name="inactive">#C4C4C4</color>
+    <color name="active">#12B519</color>
+
+
+    //Product Colors
+    <color name="Aquamarine">#7FFFD4</color>
+    <color name="Azure">#007FFF</color>
+    <color name="Brown">#964B00</color>
+    <color name="Coral">#FF7F50</color>
+    <color name="Crimson">#DC143C</color>
+    <color name="Cyan">#00FFFF</color>
+    <color name="Golden">#FFD700</color>
+    <color name="Gray">#808080</color>
+    <color name="Green">#008000</color>
+    <color name="Hot_Pink">#FF69B4</color>
+    <color name="Lime">#32CD32</color>
+    <color name="Magent">#FF00FF</color>
+    <color name="Maroon">#800000</color>
+    <color name="Navy_Blue">#000080</color>
+    <color name="Olive">#808000</color>
+    <color name="Orange">#FFA500</color>
+    <color name="Purple">#A020F0</color>
+    <color name="Royal_Blue">#4169E1</color>
+    <color name="Silver">#C0C0C0</color>
+    <color name="Teal">#008080</color>
+    <color name="Wheat">#F5DEB3</color>
+
+
+
+
+</resources>

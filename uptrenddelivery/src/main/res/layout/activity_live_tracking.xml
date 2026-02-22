@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F8FFFB">
+
+    <!-- Full Screen Map -->
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Top Status Card -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="#4CAF50">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Live Tracking"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/caudex"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/tvTrackingInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delivering to Rajesh Kumar · 8 mins away"
+                android:textSize="18sp"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/caudex"
+                android:layout_marginTop="8dp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Bottom Action Card -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="12dp"
+        app:cardBackgroundColor="#FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:id="@+id/tvCustomerNameBottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rajesh Kumar"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/caudex" />
+
+            <TextView
+                android:id="@+id/tvAddressBottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="123 Main St, Andheri West, Mumbai"
+                android:textSize="16sp"
+                android:fontFamily="@font/caudex"
+                android:layout_marginTop="6dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+
+                <Button
+                    android:id="@+id/btnCallCustomer"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="10dp"
+                    android:text="Call"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/caudex"
+                    android:backgroundTint="#2196F3"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/btnDelivered"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="10dp"
+                    android:text="Delivered"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/caudex"
+                    android:backgroundTint="#2E7D32"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

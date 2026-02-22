@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8FFFB">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Terms &amp; Conditions"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/caudex"
+            android:textColor="#2E7D32"
+            android:gravity="center"
+            android:layout_marginBottom="30dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="By continuing, you agree to our Terms of Service and Privacy Policy for delivery partners."
+            android:textSize="16sp"
+            android:fontFamily="@font/caudex"
+            android:textColor="#424242"
+            android:lineSpacingExtra="8dp"
+            android:layout_marginBottom="40dp" />
+
+        <CheckBox
+            android:id="@+id/checkTerms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I agree to the Terms &amp; Conditions"
+            android:textSize="16sp"
+            android:fontFamily="@font/caudex"
+            android:textColor="#424242"
+            android:layout_marginBottom="20dp" />
+
+        <CheckBox
+            android:id="@+id/checkPrivacy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I agree to the Privacy Policy"
+            android:textSize="16sp"
+            android:fontFamily="@font/caudex"
+            android:textColor="#424242"
+            android:layout_marginBottom="40dp" />
+
+        <Button
+            android:id="@+id/btnAgree"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="I AGREE &amp; CONTINUE"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/caudex"
+            android:backgroundTint="#4CAF50"
+            android:textColor="@android:color/white"
+            android:enabled="false" />
+
+    </LinearLayout>
+</ScrollView>

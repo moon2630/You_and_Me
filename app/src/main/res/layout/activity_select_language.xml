@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    tools:context=".select_language">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/yeallw_top"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:layout_width="@dimen/_75sdp"
+            android:layout_height="@dimen/_75sdp"
+            android:layout_marginLeft="@dimen/_49sdp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/vector_bird_logo5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_128sdp"
+            android:layout_marginTop="@dimen/_28sdp"
+            android:fontFamily="@font/miltonian_tattoo"
+            android:shadowColor="#8BC34A"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="5"
+            android:text="You &amp; Me"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_24ssp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_200sdp"
+        android:paddingBottom="@dimen/_50sdp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/_80sdp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_19sdp"
+                    android:layout_marginStart="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:background="@drawable/aa_text"
+                    android:textSize="@dimen/_19ssp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:fontFamily="@font/dm_serif_display"
+                    android:text="Choose your language"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_19ssp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/hindi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        android:background="@drawable/radio_selector"
+                        android:padding="@dimen/_35sdp"
+                        android:theme="@style/MyRadioButton" />
+
+                    <TextView
+                        android:id="@+id/hindi_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_50sdp"
+                        android:layout_marginTop="@dimen/_40sdp"
+                        android:fontFamily="@font/caudex"
+                        android:text="Hindi"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_19ssp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/hindi_txt"
+                        android:layout_marginStart="@dimen/_60sdp"
+                        android:fontFamily="@font/caudex"
+                        android:text="हिंदी"
+                        android:textColor="#7E7777"
+                        android:textSize="@dimen/_15ssp" />
+
+                    <ImageView
+                        android:layout_width="140dp"
+                        android:layout_height="90dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="@dimen/_23sdp"
+                        android:layout_marginEnd="@dimen/_50sdp"
+                        android:src="@drawable/hindi" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/english"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        android:background="@drawable/radio_selector"
+                        android:padding="@dimen/_35sdp"
+                        android:theme="@style/MyRadioButton" />
+
+                    <TextView
+                        android:id="@+id/english_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_50sdp"
+                        android:layout_marginTop="@dimen/_40sdp"
+                        android:fontFamily="@font/caudex"
+                        android:text="English"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_19ssp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/english_txt"
+                        android:layout_marginStart="@dimen/_56sdp"
+                        android:fontFamily="@font/caudex"
+                        android:text="English"
+                        android:textColor="#7E7777"
+                        android:textSize="@dimen/_15ssp" />
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="75dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="@dimen/_35sdp"
+                        android:layout_marginEnd="@dimen/_50sdp"
+                        android:src="@drawable/english" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/gujarati"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        android:background="@drawable/radio_selector"
+                        android:padding="@dimen/_35sdp"
+                        android:theme="@style/MyRadioButton" />
+
+                    <TextView
+                        android:id="@+id/gujarati_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_50sdp"
+                        android:layout_marginTop="@dimen/_40sdp"
+                        android:fontFamily="@font/caudex"
+                        android:text="Gujarati"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_19ssp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/gujarati_txt"
+                        android:layout_marginStart="@dimen/_60sdp"
+                        android:fontFamily="@font/caudex"
+                        android:text="ગુજરાતી"
+                        android:textColor="#7E7777"
+                        android:textSize="@dimen/_15ssp" />
+
+                    <ImageView
+                        android:layout_width="140dp"
+                        android:layout_height="90dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="@dimen/_25sdp"
+                        android:layout_marginEnd="@dimen/_50sdp"
+                        android:src="@drawable/gujarati" />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/marathi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        android:background="@drawable/radio_selector"
+                        android:padding="@dimen/_35sdp"
+                        android:theme="@style/MyRadioButton" />
+
+                    <TextView
+                        android:id="@+id/marathi_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_50sdp"
+                        android:layout_marginTop="@dimen/_40sdp"
+                        android:fontFamily="@font/caudex"
+                        android:text="Marathi"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_19ssp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/marathi_txt"
+                        android:layout_marginStart="@dimen/_64sdp"
+                        android:fontFamily="@font/caudex"
+                        android:text="मराठी"
+                        android:textColor="#7E7777"
+                        android:textSize="@dimen/_15ssp" />
+
+                    <ImageView
+                        android:layout_width="140dp"
+                        android:layout_height="90dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="@dimen/_23sdp"
+                        android:layout_marginEnd="@dimen/_50sdp"
+                        android:src="@drawable/marathi" />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/punjabi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        android:background="@drawable/radio_selector"
+                        android:padding="@dimen/_35sdp"
+                        android:theme="@style/MyRadioButton" />
+
+                    <TextView
+                        android:id="@+id/punjabi_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_50sdp"
+                        android:layout_marginTop="@dimen/_40sdp"
+                        android:fontFamily="@font/caudex"
+                        android:text="Punjabi"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_19ssp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/punjabi_txt"
+                        android:layout_marginStart="@dimen/_63sdp"
+                        android:fontFamily="@font/caudex"
+                        android:text="ਪੰਜਾਬੀ"
+                        android:textColor="#7E7777"
+                        android:textSize="@dimen/_15ssp" />
+
+                    <ImageView
+                        android:layout_width="140dp"
+                        android:layout_height="90dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="@dimen/_25sdp"
+                        android:layout_marginEnd="@dimen/_50sdp"
+                        android:src="@drawable/punjab" />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/telugu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        android:background="@drawable/radio_selector"
+                        android:padding="@dimen/_35sdp"
+                        android:theme="@style/MyRadioButton" />
+
+                    <TextView
+                        android:id="@+id/telugu_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_50sdp"
+                        android:layout_marginTop="@dimen/_40sdp"
+                        android:fontFamily="@font/caudex"
+                        android:text="Telugu"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_19ssp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/telugu_txt"
+                        android:layout_marginStart="@dimen/_60sdp"
+                        android:fontFamily="@font/caudex"
+                        android:text="తెలుగు"
+                        android:textColor="#7E7777"
+                        android:textSize="@dimen/_15ssp" />
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="80dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="@dimen/_31sdp"
+                        android:layout_marginEnd="@dimen/_50sdp"
+                        android:src="@drawable/english" />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

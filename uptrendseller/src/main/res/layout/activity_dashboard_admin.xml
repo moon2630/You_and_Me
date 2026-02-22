@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".dashboard_admin">
+
+    <!-- Main Content Area -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/custom_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/green_meee"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
+
+
+
+            <!-- Drawer Open Button -->
+            <TextView
+                android:id="@+id/drawer_open_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/vector_menu"
+                android:backgroundTint="@color/white"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="Open Drawer"
+                />
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/caudex"
+                android:text="Dashboard"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <!-- Fragment Container -->
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <!-- Navigation Drawer (Integrated directly) -->
+    <LinearLayout
+        android:layout_width="290dp"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:layout_gravity="start"
+
+        android:elevation="8dp"
+        android:orientation="vertical">
+
+        <!-- Drawer Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="185dp"
+            android:layout_marginTop="40dp"
+            android:background="#FFFFFF"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/navProfileImage"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/avatar_background" />
+
+            <TextView
+                android:id="@+id/edit_profile_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/caudex"
+                android:text="Edit Profile"
+                android:textColor="#058A0C"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!-- Navigation Menu Items -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp">
+
+            <!-- Add Product -->
+            <LinearLayout
+                android:id="@+id/nav_listing"
+                style="@style/NavItemStyle"
+                android:padding="5dp">
+
+                <RelativeLayout
+                    android:layout_width="33dp"
+                    android:layout_height="33dp"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/circle_vector"
+                    android:backgroundTint="#1E88E5"
+                    android:padding="7dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/add_product_vector2"
+                        android:backgroundTint="@color/white" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/caudex"
+                    android:text="Add Product"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Manage Products -->
+            <LinearLayout
+                android:id="@+id/nav_inventory"
+                style="@style/NavItemStyle"
+                android:padding="5dp">
+
+                <RelativeLayout
+                    android:layout_width="33dp"
+                    android:layout_height="33dp"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/circle_vector"
+                    android:backgroundTint="#00897B"
+                    android:padding="7dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/update_product_vector"
+                        android:backgroundTint="@color/white" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/caudex"
+                    android:text="Manage Products"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Order Management -->
+            <LinearLayout
+                android:id="@+id/nav_order"
+                style="@style/NavItemStyle"
+                android:padding="5dp">
+
+                <RelativeLayout
+                    android:layout_width="33dp"
+                    android:layout_height="33dp"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/circle_vector"
+                    android:backgroundTint="#FB8C00"
+                    android:padding="7dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/complete_vector"
+                        android:backgroundTint="@color/white" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/caudex"
+                    android:text="Order Management"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Product Billing -->
+            <LinearLayout
+                android:id="@+id/nav_billing"
+                style="@style/NavItemStyle"
+                android:padding="5dp">
+
+                <RelativeLayout
+                    android:layout_width="33dp"
+                    android:layout_height="33dp"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/circle_vector"
+                    android:backgroundTint="#3949AB"
+                    android:padding="7dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/vector_earningsss"
+                        android:backgroundTint="@color/white" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/caudex"
+                    android:text="Product Billing"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Commission & Earnings -->
+            <LinearLayout
+                android:id="@+id/nav_commission"
+                style="@style/NavItemStyle"
+                android:padding="5dp">
+
+                <RelativeLayout
+                    android:layout_width="33dp"
+                    android:layout_height="33dp"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/circle_vector"
+                    android:backgroundTint="#2E7D32"
+                    android:padding="7dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/vector_earnings"
+                        android:backgroundTint="@color/white" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/caudex"
+                    android:text="Commission &amp; Earnings"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Returns & Cancellations -->
+            <LinearLayout
+                android:id="@+id/nav_return"
+                style="@style/NavItemStyle"
+                android:padding="5dp">
+
+                <RelativeLayout
+                    android:layout_width="33dp"
+                    android:layout_height="33dp"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/circle_vector"
+                    android:backgroundTint="#D32F2F"
+                    android:padding="7dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/return_vector24"
+                        android:backgroundTint="@color/white" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/caudex"
+                    android:text="Returns &amp; Cancellations"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Sales Reports -->
+            <LinearLayout
+                android:id="@+id/nav_report"
+                style="@style/NavItemStyle"
+                android:padding="5dp">
+
+                <RelativeLayout
+                    android:layout_width="33dp"
+                    android:layout_height="33dp"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/circle_vector"
+                    android:backgroundTint="#6A1B9A"
+                    android:padding="7dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/vector_report"
+                        android:backgroundTint="@color/white" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/caudex"
+                    android:text="Sales Reports"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="#B2B1B1" />
+
+            <!-- Logout -->
+            <LinearLayout
+                android:id="@+id/nav_logout"
+                style="@style/NavItemStyle"
+                android:padding="5dp">
+
+                <RelativeLayout
+                    android:layout_width="33dp"
+                    android:layout_height="33dp"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/circle_vector"
+                    android:backgroundTint="#B71C1C"
+                    android:padding="7dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/log_out_vector"
+                        android:backgroundTint="@color/white" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/caudex"
+                    android:text="Logout"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

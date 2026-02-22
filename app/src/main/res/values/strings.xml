@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name" translatable="false">You &amp; Me</string>
+
+
+    <string name="signIn">Sign in to your account</string>
+    <string name="Viewyourwishlist">◆ View your wish list</string>
+    <string name="find">◆ Find and reorder past purchases</string>
+    <string name="track">◆ Track your purchases</string>
+    <string name="already">Already a customer? Sign in</string>
+    <string name="newAc">New to UpTrend? Create an account</string>
+    <string name="skip">Skip sign in</string>
+
+    <string name="welcome">welcome</string>
+    <string name="createAc">Create account</string>
+    <string name="newAcm">new to uptrend?</string>
+    <string name="firstLastName">First and Last Name</string>
+    <string name="mobileNo">Mobile No</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="passwordMsg">Password must be at least 6 characters.</string>
+    <string name="showPass">show password</string>
+
+
+    <string name="signIn2">Sign in</string>
+    <string name="already2">Already a Customer?</string>
+    <string name="forget">forget password</string>
+
+
+    <string name="forgetpass">Forgot your password</string>
+    <string name="massage1">Please enter the email address you\'d like your password reset information sent to</string>
+    <string name="enter1">Enter email address</string>
+    <string name="requestLink">Request reset link</string>
+    <string name="back1">Back to sign in</string>
+    <string name="Instruction">Instruction</string>
+    <string name="Instruction1">1. You enter the email of your signed in id here.</string>
+    <string name="Instruction2">2. Click reset button and check your email.</string>
+    <string name="Instruction3">3. Open your email and check the link of reset password.</string>
+    <string name="Instruction4">4. Click the link and reset your password.</string>
+    <string name="Instruction5">5. You can fill your new password in sign in.</string>
+</resources>

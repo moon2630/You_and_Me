@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="signIn">మీ ఖాతాకు సైన్ ఇన్ చేయండి</string>
+    <string name="Viewyourwishlist">◆ మీ కోరికల జాబితాను వీక్షించండి</string>
+    <string name="find">◆ గత కొనుగోళ్లను కనుగొని, మళ్లీ ఆర్డర్ చేయండి</string>
+    <string name="track">◆ మీ కొనుగోళ్లను ట్రాక్ చేయండి</string>
+    <string name="already">ఇప్పటికే కస్టమర్? సైన్ ఇన్ చేయండి</string>
+    <string name="newAc">UpTrendకి కొత్తవా? ఒక ఎకౌంటు సృష్టించు</string>
+    <string name="skip">సైన్ ఇన్‌ని దాటవేయి</string>
+
+    <string name="welcome">స్వాగతం</string>
+    <string name="createAc">ఖాతాను సృష్టించండి</string>
+    <string name="newAcm">UpTrendకి కొత్తదా?</string>
+    <string name="firstLastName">మొదట మరియు చివరి పేరు</string>
+    <string name="mobileNo">మొబైల్ నెం</string>
+    <string name="email">ఇమెయిల్</string>
+    <string name="password">పాస్వర్డ్</string>
+    <string name="passwordMsg">పాస్‌వర్డ్ తప్పనిసరిగా కనీసం 6 అక్షరాలు ఉండాలి.</string>
+    <string name="showPass">సంకేత పదాన్ని చూపించండి</string>
+
+
+    <string name="signIn2">సైన్ ఇన్ చేయండి</string>
+    <string name="already2">ఇప్పటికే కస్టమర్?</string>
+    <string name="forget">పాస్వర్డ్ను మర్చిపో</string>
+
+
+    <string name="forgetpass">మీ పాస్వర్డ్ మర్చిపోయారా</string>
+    <string name="massage1">దయచేసి మీరు మీ పాస్‌వర్డ్ రీసెట్ సమాచారాన్ని పంపాలనుకుంటున్న ఇమెయిల్ చిరునామాను నమోదు చేయండి</string>
+    <string name="enter1">ఈ - మెయిల్ అడ్రస్ నింపండి</string>
+    <string name="requestLink">రీసెట్ లింక్‌ని అభ్యర్థించండి</string>
+    <string name="back1">సైన్ ఇన్ చేయడానికి తిరిగి వెళ్ళు</string>
+    <string name="Instruction">సూచన</string>
+    <string name="Instruction1">1. మీరు మీ సైన్ ఇన్ చేసిన ఐడి యొక్క ఇమెయిల్‌ను ఇక్కడ నమోదు చేయండి.</string>
+    <string name="Instruction2">2. రీసెట్ బటన్‌ను క్లిక్ చేసి, మీ ఇమెయిల్‌ను తనిఖీ చేయండి.</string>
+    <string name="Instruction3">3. మీ ఇమెయిల్‌ని తెరిచి, పాస్‌వర్డ్ రీసెట్ లింక్‌ని తనిఖీ చేయండి.</string>
+    <string name="Instruction4">4. లింక్‌పై క్లిక్ చేసి, మీ పాస్‌వర్డ్‌ని రీసెట్ చేయండి.</string>
+    <string name="Instruction5">5. మీరు సైన్ ఇన్ చేయడం ద్వారా మీ కొత్త పాస్‌వర్డ్‌ను పూరించవచ్చు.</string>
+</resources>

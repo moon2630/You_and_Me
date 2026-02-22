@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".agreement_seller">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/vector_check" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="@dimen/_11sdp"
+            android:fontFamily="@font/dm_serif_display"
+            android:text="Terms &amp; Condition"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_27ssp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/caudex"
+            android:layout_marginTop="5dp"
+            android:padding="1dp"
+            android:text="The seller agrees that for may use, process and/or host seller confidential information/data such as CNIC, bank account number &amp; other bank account credentials and contact number etc."
+            android:textColor="#4A4949"
+            android:textSize="@dimen/_14ssp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/caudex"
+            android:padding="1dp"
+            android:text="The seller also agrees that for has the debit Authority; Foree may debit money from seller account/wallet/card etc. for the processing of transactions."
+            android:textColor="#4A4949"
+            android:textSize="@dimen/_14ssp" />
+
+
+        <TextView
+            android:id="@+id/terms_txt"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="@dimen/_11sdp"
+            android:fontFamily="@font/caudex"
+            android:text="Read full Terms &amp; Conditions"
+            android:textColor="#2BB931"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold" />
+
+
+        <CheckBox
+            android:id="@+id/checkbox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="50dp"
+            android:button="@drawable/checkbox_selector"
+            android:fontFamily="@font/caudex"
+            android:text="I agree with the Terms and Conditions"
+            android:textSize="17sp"
+            android:theme="@style/CustomCheckBox" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkbox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="17dp"
+                android:button="@drawable/checkbox_selector"
+                android:fontFamily="@font/caudex"
+                android:text="I agree with for"
+                android:textSize="18sp"
+                android:theme="@style/CustomCheckBox" />
+
+
+            <TextView
+                android:id="@+id/privacy_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/caudex"
+                android:text="Privacy Policy"
+                android:textColor="#2BB931"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnContinue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_60sdp"
+            android:layout_marginEnd="@dimen/_35sdp"
+            android:background="@drawable/button_background"
+            android:fontFamily="@font/caudex"
+            android:padding="10dp"
+            android:text="Continue"
+
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

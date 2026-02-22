@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <RelativeLayout
+        android:id="@+id/layout_30"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/blue_top"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/chonburi"
+            android:shadowColor="#83DB1D"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="10"
+            android:text="Product Category"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_22ssp" />
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/save_category_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_30"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="@font/caudex"
+        android:text="Save &amp; Next"
+        android:textColor="#079E0D"
+        android:textSize="@dimen/_19ssp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/txtCurrentDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/caudex"
+        android:text="Date: 26/06/2025"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12ssp"
+        android:textStyle="bold" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_105sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_19sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/caudex"
+                android:text="Select selling product category"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="bold" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:textColorHint="#024805"
+                app:boxCornerRadiusBottomEnd="@dimen/_10sdp"
+                app:boxCornerRadiusBottomStart="@dimen/_10sdp"
+                app:boxCornerRadiusTopEnd="@dimen/_10sdp"
+                app:boxCornerRadiusTopStart="@dimen/_10sdp"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                app:endIconMode="dropdown_menu"
+                app:endIconTint="#024805"
+                app:hintTextColor="#024805">
+
+                <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                    android:id="@+id/category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#8023AE27"
+                    android:fontFamily="@font/caudex"
+                    android:hint="Select Category"
+                    android:inputType="none"
+                    android:popupBackground="#FFFFFF"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/black"
+                    android:textSize="@dimen/_13sdp"
+                    android:textStyle="bold" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_19sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:fontFamily="@font/caudex"
+                android:text="Select selling product subcategory"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="bold" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:textColorHint="#024805"
+                app:boxCornerRadiusBottomEnd="@dimen/_10sdp"
+                app:boxCornerRadiusBottomStart="@dimen/_10sdp"
+                app:boxCornerRadiusTopEnd="@dimen/_10sdp"
+                app:boxCornerRadiusTopStart="@dimen/_10sdp"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                app:endIconMode="dropdown_menu"
+                app:endIconTint="#024805"
+                app:hintTextColor="#024805">
+
+                <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                    android:id="@+id/subcategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#8023AE27"
+                    android:fontFamily="@font/caudex"
+                    android:hint="Select Subcategory"
+                    android:inputType="none"
+                    android:popupBackground="#FFFFFF"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/black"
+                    android:textSize="@dimen/_13sdp"
+                    android:textStyle="bold" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+            <TextView
+                android:id="@+id/using_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:drawableEnd="@drawable/down_key"
+                android:drawableTint="#079E0D"
+                android:fontFamily="@font/brygada_1918"
+                android:text="Using tutorial"
+                android:textColor="#079E0D"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="bold" />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/guideCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_30sdp"
+                android:visibility="gone"
+                app:cardBackgroundColor="#AEE4B0"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="@dimen/_6sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_16sdp">
+
+                    <!-- Title -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/_12sdp"
+                        android:fontFamily="@font/caudex"
+                        android:text="How to List a Product"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_16ssp"
+                        android:textStyle="bold" />
+
+                    <!-- Step 1 -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/caudex"
+                        android:text="◆ Choose the correct Category and Subcategory."
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <!-- Step 2 -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/caudex"
+                        android:text="◆ Upload clear, high-quality product images (multiple views)."
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <!-- Step 3 -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/brygada_1918"
+                        android:text="◆ Enter product details: name, price, description, sizes, stock."
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <!-- Step 4 -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/caudex"
+                        android:text="◆ Add manufacture and packer details (mandatory)."
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <!-- Step 5 -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/caudex"
+                        android:text="◆ Review your product billing summary (platform fee + commission).\n  Tap \u0022List Product\u0022 to make it live on the marketplace!"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

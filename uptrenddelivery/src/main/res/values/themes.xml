@@ -1,0 +1,37 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.UpTrend" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+        <item name="android:statusBarColor">#6BE7F6</item>
+
+        //radio btn colour
+        <item name="colorPrimary">#058FFD</item>
+
+    </style>
+
+
+    //change the radio button colour
+    <style name="RadioButtonStyle" parent="Theme.AppCompat.Light">
+
+        <item name="android:textColorPrimary">#05B1FF</item>
+
+    </style>
+
+    //Toast message style
+
+    <style name="UptrendToast">
+        <item name="stTextColor">@color/black</item>
+        <item name="stColorBackground">#66DEED</item>
+        <item name="stFont">@font/brygada_1918</item>
+        <item name="stStrokeWidth">1dp</item>
+        <item name="stTextSize">@dimen/_13ssp</item>
+        <item name="stLength">LONG</item>
+        <item name="stStrokeColor">@color/black</item>
+        <item name="stIconStart">@drawable/fire_toast</item>
+    </style>
+
+
+    <style name="Theme.UpTrend" parent="Base.Theme.UpTrend" />
+</resources>

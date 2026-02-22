@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+
+        <item>@font/</item>
+        <item>@font/brygada_1918</item>
+        <item>@font/castoro</item>
+        <item>@font/fraunces_medium</item>
+        <item>@font/fraunces_thin</item>
+        <item>@font/dm_serif_display</item>
+        <item>@font/gelasio</item>
+        <item>@font/limelight</item>
+        <item>@font/meddon</item>
+        <item>@font/miltonian_tattoo</item>
+    </array>
+</resources>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/layout_30"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/blue_top"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/chonburi"
+            android:shadowColor="#D9D8D1"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="10"
+            android:text="Add Product Details"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_22ssp" />
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/back_add_product_manufacture_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_30"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@drawable/back11_vector"
+        android:backgroundTint="#2A8E31"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/caudex" />
+
+
+    <TextView
+        android:id="@+id/save_manufacture_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_30"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="@font/caudex"
+        android:text="Save &amp; Next"
+        android:textColor="#2A8E31"
+        android:textSize="@dimen/_19ssp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/txtCurrentDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/caudex"
+        android:text="Date: 26/06/2025"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12ssp"
+        android:textStyle="bold" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_105sdp">
+        <LinearLayout
+            android:layout_marginBottom="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_24sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/caudex"
+                android:text="Generic Name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/generic_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/edittext_touch_effect"
+                android:fontFamily="@font/caudex"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:padding="15dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="#A9A7A7"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_24sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/caudex"
+                android:text="Country of Origin :-"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_24sdp"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:fontFamily="@font/caudex"
+                android:text="India"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_17ssp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_24sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:fontFamily="@font/caudex"
+                android:text="Manufacture's Details"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/manufacture_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/edittext_touch_effect"
+                android:fontFamily="@font/caudex"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:padding="30dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="#A9A7A7"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:textSize="18sp" />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_24sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/caudex"
+                android:text="Packer's Details"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/Packers_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/edittext_touch_effect"
+                android:fontFamily="@font/caudex"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:padding="30dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="#A9A7A7"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:textSize="18sp" />
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

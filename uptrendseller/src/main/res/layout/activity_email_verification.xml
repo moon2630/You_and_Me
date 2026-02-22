@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".admin_login">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/yeallw_top">
+
+
+
+        <ImageView
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/logo_bird" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_95sdp"
+            android:layout_marginTop="@dimen/_28sdp"
+            android:fontFamily="@font/miltonian_tattoo"
+            android:shadowColor="#2196F3"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="10"
+            android:text="You &amp; Me Seller"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_22ssp" />
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_85sdp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:id="@+id/progress_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/circle_vector"
+                                android:fontFamily="@font/dm_serif_display"
+                                android:gravity="center"
+                                android:text="1"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_14ssp"
+                                android:textStyle="bold" />
+
+
+                            <TextView
+                                android:layout_width="28dp"
+                                android:layout_height="1dp"
+                                android:layout_gravity="center_vertical"
+                                android:background="#DB8304" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/circle_vector"
+                                android:fontFamily="@font/dm_serif_display"
+                                android:gravity="center"
+                                android:text="2"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_14ssp"
+                                android:textStyle="bold" />
+
+
+                            <TextView
+                                android:layout_width="28dp"
+                                android:layout_height="1dp"
+                                android:layout_gravity="center_vertical"
+                                android:background="#A5AAA6" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/circle_vector"
+                                android:backgroundTint="#D0CECE"
+                                android:fontFamily="@font/dm_serif_display"
+                                android:gravity="center"
+                                android:text="3"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_14ssp"
+                                android:textStyle="bold" />
+
+
+                            <TextView
+                                android:layout_width="28dp"
+                                android:layout_height="1dp"
+                                android:layout_gravity="center_vertical"
+                                android:background="#A5AAA6" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/circle_vector"
+                                android:backgroundTint="#D0CECE"
+                                android:fontFamily="@font/dm_serif_display"
+                                android:gravity="center"
+                                android:text="4"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_14ssp"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+
+                            <ProgressBar
+                                android:id="@+id/progressbar_email_verification"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:indeterminateOnly="false"
+                                android:progressDrawable="@drawable/circular" />
+
+                            <TextView
+                                android:id="@+id/text_percentage_email_verification"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:fontFamily="@font/caudex"
+                                android:text="0%"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/progress_layout"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="5dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="8dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/_22sdp"
+                            android:fontFamily="@font/caudex"
+                            android:text="please verify your email"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_20ssp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/_22sdp"
+                            android:fontFamily="@font/caudex"
+                            android:text="We've sent an email to"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+
+                        <TextView
+                            android:id="@+id/txt_email"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:fontFamily="@font/caudex"
+                            android:text="email"
+                            android:textColor="#25A32A"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:fontFamily="@font/caudex"
+                            android:gravity="center"
+                            android:text="to verify your email address and activate your account. The link in the email will expire in 24 hours."
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+
+                        <TextView
+                            android:id="@+id/txt_verify"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="15dp"
+                            android:fontFamily="@font/caudex"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btn_verification"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_40sdp"
+                            android:layout_marginEnd="@dimen/_40sdp"
+                            android:layout_marginBottom="40dp"
+                            android:background="@drawable/button_background"
+                            android:fontFamily="@font/caudex"
+                            android:text="Verify email"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_14ssp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </RelativeLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout_0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/click_info_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:drawableEnd="@drawable/down_key"
+                    android:fontFamily="@font/caudex"
+                    android:text="Instruction"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_16ssp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView_0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_30sdp"
+                android:visibility="gone"
+                app:cardBackgroundColor="#61DB66"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="@dimen/_5sdp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_15sdp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/caudex"
+                        android:text="1. You can check your email."
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/caudex"
+                        android:text="2. Click verify email and check your email."                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/caudex"
+                        android:text="3. Open your email and check the link of email verification."
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/caudex"
+                        android:text="4. Click the link and open our app."
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/caudex"
+                        android:text="5. You can see your email is verified in green text."
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14ssp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/caudex"
+                        android:text="6. You can automatically move to next activity(please few second wait....)."
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14ssp" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

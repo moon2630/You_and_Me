@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "395824675893",
+    "project_id": "up-trend-b05d4",
+    "storage_bucket": "up-trend-b05d4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:395824675893:android:3a76d625669da3c22b457c",
+        "android_client_info": {
+          "package_name": "com.example.uptrend"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDG5QyVvvOSoDAWWk849L4XtmApbMXPpks"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:395824675893:android:3a74f87b052d31872b457c",
+        "android_client_info": {
+          "package_name": "com.example.uptrenddelivery"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDG5QyVvvOSoDAWWk849L4XtmApbMXPpks"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:395824675893:android:5797259447a72b772b457c",
+        "android_client_info": {
+          "package_name": "com.example.uptrendseller"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDG5QyVvvOSoDAWWk849L4XtmApbMXPpks"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

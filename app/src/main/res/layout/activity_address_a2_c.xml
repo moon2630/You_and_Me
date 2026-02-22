@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".address_A2C">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/greenmeee"
+        app:cardElevation="@dimen/_10sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/close_btn_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="6dp"
+                android:drawableTint="@color/white"
+                android:drawableStart="@drawable/back11_vector" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_11sdp"
+                android:fontFamily="@font/dm_serif_display"
+                android:text="Add Delivery Address"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_18ssp" />
+
+
+            <TextView
+                android:id="@+id/save_address_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="@color/black"
+                android:background="@drawable/vector_save_true" />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_45sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_19sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/caudex"
+                android:text="Enter Full Name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp" />
+
+
+            <EditText
+                android:id="@+id/name_adress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:textColor="@color/black"
+                android:textColorHint="#A9A7A7"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:background="@drawable/edittext_touch_effect"
+                android:fontFamily="@font/brygada_1918"
+                android:hint="Full Name"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:padding="15dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_19sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/caudex"
+                android:text="Enter Phone No"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp" />
+
+
+            <EditText
+                android:id="@+id/phone_no_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:textColor="@color/black"
+                android:textColorHint="#A9A7A7"
+
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:background="@drawable/edittext_touch_effect"
+                android:fontFamily="@font/brygada_1918"
+                android:hint="Mobile No"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:padding="15dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/second_no_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:drawableStart="@drawable/plus_vector"
+                android:drawableTint="#056EC1"
+                android:fontFamily="@font/caudex"
+                android:text="Add Alternate Phone Number"
+                android:textColor="#056EC1"
+                android:textStyle="bold"
+                android:textSize="@dimen/_12ssp" />
+
+
+            <LinearLayout
+                android:id="@+id/layout_second_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <EditText
+                    android:id="@+id/second_no_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#A9A7A7"
+
+                    android:textCursorDrawable="@drawable/cursor_color"
+                    android:background="@drawable/edittext_touch_effect"
+                    android:fontFamily="@font/brygada_1918"
+                    android:hint="Mobile No"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:padding="15dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:textSize="18sp" />
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_19sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/caudex"
+                android:text="Enter Pincode"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp" />
+
+
+            <EditText
+                android:id="@+id/pincode_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:layout_marginEnd="200dp"
+                android:textColorHint="#A9A7A7"
+
+                android:background="@drawable/edittext_touch_effect"
+                android:fontFamily="@font/brygada_1918"
+                android:hint="Mobile No"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="6"
+                android:padding="15dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textSize="18sp" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_19sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/caudex"
+                    android:text="Enter State"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12ssp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/caudex"
+                    android:text="Enter City"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12ssp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/state_address"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:textColor="@color/black"
+                    android:textCursorDrawable="@drawable/cursor_color"                    android:layout_weight="1"
+                    android:background="@drawable/edittext_touch_effect"
+                    android:fontFamily="@font/brygada_1918"
+                    android:hint="State"
+                    android:textColorHint="#A9A7A7"
+
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:padding="15dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:textSize="18sp" />
+
+
+                <EditText
+                    android:id="@+id/city_address"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="15dp"
+                    android:textColor="@color/black"
+                    android:textCursorDrawable="@drawable/cursor_color"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext_touch_effect"
+                    android:fontFamily="@font/brygada_1918"
+                    android:hint="City"
+                    android:textColorHint="#A9A7A7"
+
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:padding="15dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:textSize="18sp" />
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_19sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/caudex"
+                android:text="Enter House No., Building Name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp" />
+
+
+            <EditText
+                android:id="@+id/house_adress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:background="@drawable/edittext_touch_effect"
+                android:fontFamily="@font/brygada_1918"
+                android:textColorHint="#A9A7A7"
+
+                android:hint="House No., Building Name"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:padding="15dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_19sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/caudex"
+                android:text="Enter Road Name, Area, Colony"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp" />
+
+
+            <EditText
+                android:id="@+id/road_adress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:background="@drawable/edittext_touch_effect"
+                android:fontFamily="@font/brygada_1918"
+                android:hint="Road Name, Area, Colony"
+                android:imeOptions="actionDone"
+                android:textColorHint="#A9A7A7"
+
+                android:inputType="number"
+                android:padding="15dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_19sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/caudex"
+                android:text="Type of address"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp" />
+
+
+            <RadioGroup
+                android:id="@+id/radioGroupTypeOfAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButtonHome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:drawablePadding="5dp"
+                    android:drawableEnd="@drawable/vector_home"
+                    android:fontFamily="@font/caudex"
+                    android:theme="@style/MyRadioButton"
+                    android:textColor="@color/black"
+                    android:text="Home" />
+
+
+                <RadioButton
+                    android:id="@+id/radioButtonWork"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:drawablePadding="5dp"
+                    android:drawableEnd="@drawable/vector_company"
+                    android:fontFamily="@font/caudex"
+                    android:textColor="@color/black"
+                    android:theme="@style/MyRadioButton"
+                    android:text="Work" />
+
+
+
+
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

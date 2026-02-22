@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:padding="@dimen/_5sdp">
+
+
+    <LinearLayout
+        android:id="@+id/productContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_100sdp"
+        android:background="@drawable/recent_background"
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+       >
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/productImage"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginTop="5dp"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize10Percent"
+            app:srcCompat="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:id="@+id/productName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/caudex"
+            android:gravity="center_horizontal"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:paddingBottom="@dimen/_5sdp"
+            android:text="Men's Sweatshirts "
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

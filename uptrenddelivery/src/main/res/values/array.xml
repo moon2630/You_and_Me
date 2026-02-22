@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string-array name="Gujarat">
+        <item>select city</item>
+        <item>Ahmedabad</item>
+        <item>Bilimora</item>
+        <item>Surat</item>
+        <item>Vadodara</item>
+        <item>Rajkot</item>
+        <item>Bhavnagar</item>
+        <item>Jamnagar</item>
+        <item>Junagadh</item>
+        <item>Gandhinagar</item>
+        <item>Anand</item>
+        <item>Bharuch</item>
+        <item>Nadiad</item>
+        <item>Morbi</item>
+        <item>Vapi</item>
+        <item>Gandhidham</item>
+    </string-array>
+
+
+    <string-array name="Rajasthan">
+        <item>select city</item>
+        <item>Jaipur</item>
+        <item>Udaipur</item>
+        <item>Jodhpur</item>
+        <item>Ajmer</item>
+        <item>Kota</item>
+        <item>Bikaner</item>
+        <item>Alwar</item>
+        <item>Mount Abu</item>
+        <item>Sikar</item>
+        <item>Chittorgarh</item>
+        <item>Bhilwara</item>
+        <item>Hanumangarh</item>
+        <item>Barmer</item>
+        <item>Pali</item>
+        <item>Sawai Madhopur</item>
+    </string-array>
+
+    <string-array name="Maharashtra">
+        <item>select city</item>
+        <item>Mumbai</item>
+        <item>Pune</item>
+        <item>Nagpur</item>
+        <item>Thane</item>
+        <item>Nashik</item>
+        <item>Aurangabad</item>
+        <item>Solapur</item>
+        <item>Amravati</item>
+        <item>Navi Mumbai</item>
+        <item>Kolhapur</item>
+        <item>Akola</item>
+        <item>Jalgaon</item>
+        <item>Latur</item>
+        <item>Dhule</item>
+        <item>Ahmednagar</item>
+    </string-array>
+
+    <string-array name="Uttar_Pradesh">
+        <item>Lucknow</item>
+        <item>Kanpur</item>
+        <item>Varanasi</item>
+        <item>Agra</item>
+        <item>Allahabad</item>
+        <item>Ghaziabad</item>
+        <item>Noida</item>
+        <item>Meerut</item>
+        <item>Bareilly</item>
+        <item>Aligarh</item>
+        <item>Gorakhpur</item>
+        <item>Moradabad</item>
+        <item>Mathura</item>
+        <item>Jhansi</item>
+        <item>Muzaffarnagar</item>
+
+    </string-array>
+
+    <string-array name="Madhya_Pradesh">
+
+        <item>Bhopal</item>
+        <item>Indore</item>
+        <item>Jabalpur</item>
+        <item>Gwalior</item>
+        <item>Ujjain</item>
+        <item>Ratlam</item>
+        <item>Sagar</item>
+        <item>Rewa</item>
+        <item>Satna</item>
+        <item>Dewas</item>
+        <item>Neemuch</item>
+        <item>Mandsaur</item>
+        <item>Khandwa</item>
+        <item>Burhanpur</item>
+        <item>Chhindwara</item>
+
+    </string-array>
+
+    <string-array name="Tamil_Nadu">
+        <item>Chennai</item>
+        <item>Coimbatore</item>
+        <item>Madurai</item>
+        <item>Tiruchirappalli</item>
+        <item>Salem</item>
+        <item>Tirunelveli</item>
+        <item>Erode</item>
+        <item>Vellore</item>
+        <item>Thoothukudi</item>
+        <item>Nagercoil</item>
+        <item>Thanjavur</item>
+        <item>Dindigul</item>
+        <item>Cuddalore</item>
+        <item>Kanchipuram</item>
+        <item>Karur</item>
+
+    </string-array>
+
+    <string-array name="West_Bengal">
+
+        <item>Kolkata</item>
+        <item>Darjeeling</item>
+        <item>Siliguri</item>
+        <item>Durgapur</item>
+        <item>Asansol</item>
+        <item>Haldia</item>
+        <item>Howrah</item>
+        <item>Kharagpur</item>
+        <item>Bardhaman</item>
+        <item>Malda</item>
+        <item>Krishnanagar</item>
+        <item>Medinipur</item>
+        <item>Jalpaiguri</item>
+        <item>Bankura</item>
+        <item>Cooch Behar</item>
+
+    </string-array>
+
+    <string-array name="Assam">
+        <item>Guwahati</item>
+        <item>Dispur</item>
+        <item>Silchar</item>
+        <item>Dibrugarh</item>
+        <item>Jorhat</item>
+        <item>Nagaon</item>
+        <item>Tezpur</item>
+        <item>Tinsukia</item>
+        <item>Barpeta</item>
+        <item>Golaghat</item>
+        <item>Sivasagar</item>
+        <item>Bongaigaon</item>
+        <item>Goalpara</item>
+        <item>Dhubri</item>
+        <item>Kokrajhar</item>
+
+    </string-array>
+
+
+    <string-array name="Punjab">
+        <item>Amritsar</item>
+        <item>Ludhiana</item>
+        <item>Jalandhar</item>
+        <item>Patiala</item>
+        <item>Bathinda</item>
+        <item>Hoshiarpur</item>
+        <item>Mohali</item>
+        <item>Pathankot</item>
+        <item>Moga</item>
+        <item>Abohar</item>
+        <item>Batala</item>
+        <item>Barnala</item>
+        <item>Sangrur</item>
+        <item>Kapurthala</item>
+        <item>Faridkot</item>
+
+    </string-array>
+
+    <string-array name="Goa">
+        <item>Panaji</item>
+        <item>Margao</item>
+        <item>Vasco da Gama</item>
+        <item>Mapusa</item>
+        <item>Ponda</item>
+        <item>Bicholim</item>
+        <item>Curchorem</item>
+        <item>Sanquelim</item>
+        <item>Valpoi</item>
+        <item>Mormugao</item>
+        <item>Quepem</item>
+        <item>Sanguem</item>
+        <item>Canacona</item>
+        <item>Dharbandora</item>
+        <item>Salcete</item>
+
+    </string-array>
+    <string-array name="state_spinner">
+        <item>select state</item>
+        <item>Gujarat</item>
+        <item>Rajasthan</item>
+        <item>Maharashtra</item>
+        <item>Uttar Pradesh</item>
+        <item>Madhya Pradesh</item>
+        <item>Tamil Nadu</item>
+        <item>West Bengal</item>
+        <item>Assam</item>
+        <item>Punjab</item>
+        <item>Goa</item>
+    </string-array>
+
+    <string-array name="vehicle_spinner">
+        <item>select vehicle</item>
+        <item>tempo</item>
+        <item>chgro</item>
+        <item>riksha</item>
+        <item>ladi</item>
+        <item>panchar cycle</item>
+        <item>bugati</item>
+        <item>dhoom</item>
+        <item>godo</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+    </string-array>
+
+
+    <string-array name="account_type_spinner">
+        <item>current account</item>
+        <item>saving account</item>
+        <item>overdraft account</item>
+    </string-array>
+
+
+
+</resources>

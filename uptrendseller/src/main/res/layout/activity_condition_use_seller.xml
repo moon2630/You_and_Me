@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".condition_use_seller">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_marginBottom="19dp"
+        android:background="@drawable/yeallw_top"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/miltonian_tattoo"
+            android:shadowColor="#2196F3"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="10"
+
+            android:text="Terms &amp; conditions"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_26ssp" />
+
+
+
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_90sdp"
+        android:scrollbarSize="5dp"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="30dp"
+                    android:backgroundTint="@color/white"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="@dimen/_10sdp"
+                    app:cardElevation="5dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_8sdp"
+                            android:layout_marginTop="10dp"
+                            android:drawableEnd="@drawable/vector_hello"
+                            android:drawablePadding="15dp"
+                            android:fontFamily="@font/caudex"
+                            android:gravity="center_vertical"
+                            android:text="HELLO!"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_20ssp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginBottom="10dp"
+                            android:fontFamily="@font/caudex"
+                            android:text="Before you can create an account, please read and accept our Terms and Conditions."
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14ssp" />
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginStart="@dimen/_25sdp"
+                        android:backgroundTint="#46CB4B"
+                        android:layout_gravity="center_vertical"
+
+                        android:background="@drawable/green_circle_bg" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:fontFamily="@font/brygada_1918"
+                        android:text="Last updated : 15/12/25"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_11ssp" />
+
+
+                </LinearLayout>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="30dp"
+                    android:backgroundTint="@color/white"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="@dimen/_10sdp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="10dp">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:fontFamily="@font/caudex"
+                            android:text="◆ These Terms and Condition are entered into by and between My Design, a company organized and existing under the laws of Your Jurisdiction, with it's principal place of business in Gujarat and you, the individual or entity agreeing to these terms."
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/caudex"
+                            android:text="◆ We appreciate your interest in becoming a seller on our platform. Before you get started, please carefully read and understand the following terms and conditions that govern your relationship with UpTrend. By registering as a seller and using our platform, you agree to comply with these terms."
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/caudex"
+                            android:text="1. Account Registration:"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_15ssp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:fontFamily="@font/caudex"
+                            android:text="a. To become a seller on UpTrend, you must create an account and provide accurate, complete, and up-to-date information."
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13ssp" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:fontFamily="@font/caudex"
+                            android:text="b. You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account."
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13ssp" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/caudex"
+                            android:text="2. Product Listings:"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_15ssp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:fontFamily="@font/caudex"
+                            android:text="a. You may list products for sale on UpTrend, provided they comply with our policies and guidelines."
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13ssp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:fontFamily="@font/caudex"
+                            android:text="b. You are responsible for the accuracy and completeness of product information, including pricing, descriptions, and images."
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13ssp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:fontFamily="@font/caudex"
+                            android:text="c. UpTrend reserves the right to review and approve product listings before they are made public."
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13ssp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/caudex"
+                            android:text="3. Order Fulfillment:"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_15ssp"
+                            android:textStyle="bold" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:fontFamily="@font/caudex"
+                            android:text="a. Sellers are responsible for fulfilling orders promptly and providing accurate shipping information."
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13ssp" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:fontFamily="@font/caudex"
+                            android:text="b. If you are unable to fulfill an order, you must promptly notify the buyer and UpTrend, offering alternatives or processing a refund."
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13ssp" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/caudex"
+                            android:text="4. Payments:"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_15ssp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:fontFamily="@font/caudex"
+                            android:text="a. UpTrend will facilitate transactions between buyers and sellers. Payments will be processed through our secure payment gateway."
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13ssp" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:fontFamily="@font/caudex"
+                            android:text="b. Sellers will receive payments, minus any applicable fees, in accordance with UpTrend's payment schedule."
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13ssp" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/caudex"
+                            android:text="5. Fees and Commissions:"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_15ssp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:fontFamily="@font/caudex"
+                            android:text="a. UpTrend may charge fees for using its platform, and these fees will be clearly communicated to sellers."
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13ssp" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:fontFamily="@font/caudex"
+                            android:text="b. Commission rates on sales may apply, and sellers agree to pay these commissions as specified by UpTrend."
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13ssp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/caudex"
+                            android:text="6. Compliance with Laws:"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_15ssp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:fontFamily="@font/caudex"
+                            android:text="a. Sellers must comply with all applicable laws, regulations, and industry standards."
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13ssp" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:fontFamily="@font/caudex"
+                            android:textColor="@color/black"
+                            android:text="b. It is the seller's responsibility to ensure that their products meet any legal requirements, including safety standards and intellectual property laws."
+                            android:textSize="@dimen/_13ssp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/caudex"
+                            android:text="7. Communication with Buyers:"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14ssp"
+                            android:textStyle="bold" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:fontFamily="@font/caudex"
+                            android:text="a. Sellers are encouraged to provide excellent customer service and respond promptly to buyer inquiries."
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13ssp" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:fontFamily="@font/caudex"
+                            android:text="b. Any communication with buyers should be professional, respectful, and in compliance with UpTrend's communication guidelines."
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13ssp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/caudex"
+                            android:text="8. Termination of Account:"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_15ssp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:fontFamily="@font/caudex"
+                            android:text="a. UpTrend reserves the right to terminate or suspend a seller's account for any violation of these terms and conditions."
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13ssp" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:fontFamily="@font/caudex"
+                            android:text="b. Sellers may terminate their account at any time by following the designated process."
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13ssp" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/caudex"
+                            android:text="9. Changes to Terms and Conditions:"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_15ssp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:fontFamily="@font/caudex"
+                            android:text="UpTrend reserves the right to modify these terms and conditions at any time. Sellers will be notified of any changes, and continued use of the platform constitutes acceptance of the updated terms."
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13ssp" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:fontFamily="@font/caudex"
+                            android:text="              By using UpTrend as a seller, you acknowledge that you have read, understood, and agree to abide by these terms and conditions. If you have any questions or concerns, please contact our support team."
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13ssp"
+                            android:layout_marginBottom="15dp"/>
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -1,0 +1,760 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/caudex"
+        android:layout_marginStart="25dp"
+        android:text="Your product stock !"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14ssp" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:id="@+id/layout_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/jeans_size1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="30dp"
+                        android:background="@drawable/square_size2"
+                        android:fontFamily="@font/caudex"
+                        android:gravity="center"
+                        android:text="28"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_20ssp"
+                        android:textStyle="bold" />
+
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/black" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/layout_1"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/txtMinus6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/squre_red_bg"
+                        android:drawableStart="@drawable/minus_vector"
+                        android:drawableTint="@color/white"
+                        android:onClick="decrement"
+                        android:padding="1dp" />
+
+
+                    <TextView
+                        android:id="@+id/value6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:fontFamily="@font/brygada_1918"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_17ssp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtPlus6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/squre_blue_bg"
+
+                        android:drawableStart="@drawable/plus_vector"
+                        android:drawableTint="@color/black"
+                        android:onClick="increment"
+                        android:padding="1dp" />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:id="@+id/layout_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/jeans_size2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="30dp"
+                        android:background="@drawable/square_size2"
+                        android:fontFamily="@font/caudex"
+                        android:gravity="center"
+                        android:text="30"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_20ssp"
+                        android:textStyle="bold" />
+
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/black" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/layout_2"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_horizontal"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/txtMinus7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/squre_red_bg"
+                        android:drawableStart="@drawable/minus_vector"
+                        android:drawableTint="@color/white"
+                        android:onClick="decrement"
+                        android:padding="1dp" />
+
+
+                    <TextView
+                        android:id="@+id/value7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:fontFamily="@font/brygada_1918"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_17ssp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtPlus7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/squre_blue_bg"
+                        android:drawableStart="@drawable/plus_vector"
+                        android:drawableTint="@color/black"
+                        android:onClick="increment"
+                        android:padding="1dp" />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:id="@+id/layout_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/jeans_size3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="30dp"
+                        android:background="@drawable/square_size2"
+                        android:fontFamily="@font/caudex"
+                        android:gravity="center"
+                        android:text="32"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_20ssp"
+                        android:textStyle="bold" />
+
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/black" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/layout_3"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/txtMinus8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/squre_red_bg"
+                        android:drawableStart="@drawable/minus_vector"
+                        android:drawableTint="@color/white"
+                        android:onClick="decrement"
+                        android:padding="1dp" />
+
+
+                    <TextView
+                        android:id="@+id/value8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:fontFamily="@font/brygada_1918"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_17ssp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtPlus8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/squre_blue_bg"
+
+                        android:drawableStart="@drawable/plus_vector"
+                        android:drawableTint="@color/black"
+                        android:onClick="increment"
+                        android:padding="1dp" />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:id="@+id/layout_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/jeans_size4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="30dp"
+                        android:background="@drawable/square_size2"
+                        android:fontFamily="@font/caudex"
+                        android:gravity="center"
+                        android:text="34"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_20ssp"
+                        android:textStyle="bold" />
+
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/black" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/layout_4"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/txtMinus9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/squre_red_bg"
+                        android:drawableStart="@drawable/minus_vector"
+                        android:drawableTint="@color/white"
+                        android:onClick="decrement"
+                        android:padding="1dp" />
+
+
+                    <TextView
+                        android:id="@+id/value9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:fontFamily="@font/brygada_1918"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_17ssp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtPlus9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/squre_blue_bg"
+
+                        android:drawableStart="@drawable/plus_vector"
+                        android:drawableTint="@color/black"
+                        android:onClick="increment"
+                        android:padding="1dp" />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:id="@+id/layout_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/jeans_size5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="30dp"
+                        android:background="@drawable/square_size2"
+                        android:fontFamily="@font/caudex"
+                        android:gravity="center"
+                        android:text="36"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_20ssp"
+                        android:textStyle="bold" />
+
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/black" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/layout_5"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/txtMinus10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/squre_red_bg"
+                        android:drawableStart="@drawable/minus_vector"
+                        android:drawableTint="@color/white"
+                        android:onClick="decrement"
+                        android:padding="1dp" />
+
+
+                    <TextView
+                        android:id="@+id/value10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:fontFamily="@font/brygada_1918"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_17ssp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtPlus10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/squre_blue_bg"
+
+                        android:drawableStart="@drawable/plus_vector"
+                        android:drawableTint="@color/black"
+                        android:onClick="increment"
+                        android:padding="1dp" />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:id="@+id/layout_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/jeans_size6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="30dp"
+                        android:background="@drawable/square_size2"
+                        android:fontFamily="@font/caudex"
+                        android:gravity="center"
+                        android:text="38"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_20ssp"
+                        android:textStyle="bold" />
+
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/black" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/layout_6"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/txtMinus11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/squre_red_bg"
+                        android:drawableStart="@drawable/minus_vector"
+                        android:drawableTint="@color/white"
+                        android:onClick="decrement"
+                        android:padding="1dp" />
+
+
+                    <TextView
+                        android:id="@+id/value11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:fontFamily="@font/brygada_1918"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_17ssp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtPlus11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/squre_blue_bg"
+
+                        android:drawableStart="@drawable/plus_vector"
+                        android:drawableTint="@color/black"
+                        android:onClick="increment"
+                        android:padding="1dp" />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:id="@+id/layout_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/jeans_size7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="30dp"
+                        android:background="@drawable/square_size2"
+                        android:fontFamily="@font/caudex"
+                        android:gravity="center"
+                        android:text="40"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_20ssp"
+                        android:textStyle="bold" />
+
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/black" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/layout_7"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/txtMinus12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/squre_red_bg"
+                        android:drawableStart="@drawable/minus_vector"
+                        android:drawableTint="@color/white"
+                        android:onClick="decrement"
+                        android:padding="1dp" />
+
+
+                    <TextView
+                        android:id="@+id/value12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:fontFamily="@font/brygada_1918"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_17ssp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtPlus12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/squre_blue_bg"
+
+                        android:drawableStart="@drawable/plus_vector"
+                        android:drawableTint="@color/black"
+                        android:onClick="increment"
+                        android:padding="1dp" />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:fontFamily="@font/caudex"
+                android:text="Total Stock :"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15ssp" />
+
+
+            <TextView
+                android:id="@+id/stock_pant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:fontFamily="@font/caudex"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15ssp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

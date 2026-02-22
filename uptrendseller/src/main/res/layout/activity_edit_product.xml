@@ -1,0 +1,1660 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".edit_product">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/green_meee"
+        app:cardElevation="@dimen/_10sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/close_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginTop="6dp"
+                android:drawableStart="@drawable/back_left"
+                android:drawableTint="@color/white" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_11sdp"
+                android:fontFamily="@font/dm_serif_display"
+                android:text="Edit Product"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_18ssp" />
+
+
+            <TextView
+                android:id="@+id/btnUpdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="90dp"
+                android:layout_marginTop="@dimen/_11sdp"
+                android:fontFamily="@font/dm_serif_display"
+                android:shadowColor="#D6E80D"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="10"
+                android:text="Update"
+                android:textColor="#F8F9FA"
+                android:textSize="@dimen/_18ssp" />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_45sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60dp"
+            android:orientation="vertical">
+
+
+            <com.denzcoskun.imageslider.ImageSlider
+                android:id="@+id/imageSlider"
+                android:layout_width="@dimen/_220sdp"
+                android:layout_height="@dimen/_270sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:iss_auto_cycle="true"
+                app:iss_corner_radius="20"
+                app:iss_delay="1000"
+                app:iss_period="1000"
+                app:iss_title_background="@drawable/default_gradient" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:orientation="horizontal">
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnAddImage"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_background"
+                    android:drawableStart="@drawable/add_image_vector"
+                    android:fontFamily="@font/dm_serif_display"
+                    android:padding="@dimen/_10sdp"
+                    android:text="Add Image"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14ssp"
+                    android:textStyle="bold" />
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnClearImages"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_background"
+                    android:drawableStart="@drawable/clear_all_vector"
+                    android:fontFamily="@font/dm_serif_display"
+                    android:padding="@dimen/_10sdp"
+                    android:text="Clear all image"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14ssp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/get_product_saved_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_24sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/caudex"
+                android:text="Add on 26/06/2004"
+                android:textColor="#1976D2"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/get_product_edit_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_24sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/caudex"
+                android:textColor="#F57C00"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_24sdp"
+                    android:fontFamily="@font/caudex"
+                    android:text="Product ID : "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13ssp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/edit_product_id_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="@font/caudex"
+                    android:text="Not set ID"
+                    android:textColor="#2E7D32"
+                    android:textSize="@dimen/_13ssp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_24sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/caudex"
+                android:text="Brand Name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/txtBrandName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/edittext_touch_effect"
+                android:fontFamily="@font/caudex"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:padding="15dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="#A9A7A7"
+                android:textCursorDrawable="@drawable/cursor_color"
+
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_24sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/caudex"
+                android:text="Product Name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/txtProductName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/edittext_touch_effect"
+                android:fontFamily="@font/caudex"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:padding="15dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="#A9A7A7"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_24sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/caudex"
+                android:text="Product Selling Price"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/txtSellingPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="120dp"
+                android:background="@drawable/edittext_touch_effect"
+                android:drawableEnd="@drawable/rupee_vector"
+                android:fontFamily="@font/caudex"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="10"
+                android:padding="15dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="#A9A7A7"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_24sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/caudex"
+                android:text="Product Original Price"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/txtOriginalPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="120dp"
+                android:background="@drawable/edittext_touch_effect"
+                android:drawableEnd="@drawable/rupee_vector"
+                android:fontFamily="@font/caudex"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="10"
+                android:padding="15dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="#A9A7A7"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/edit_txt_minus_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/caudex"
+                android:text="Saved: ₹0"
+                android:textColor="#2E7D32"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/edit_txt_discount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/caudex"
+                android:text="0% off"
+                android:textColor="#D84315"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/layoutShirtED"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp">
+
+
+                        <include layout="@layout/shirt_size" />
+
+
+                    </HorizontalScrollView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutPantED"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp">
+
+
+                        <include layout="@layout/jeans_pant_size" />
+
+
+                    </HorizontalScrollView>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/layoutFootWareED"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp">
+
+
+                        <include layout="@layout/shoes_size" />
+
+
+                    </HorizontalScrollView>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/other_categoryED"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/caudex"
+                    android:text="How much product stock ?"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14ssp" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/txtMinus55"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/squre_red_bg"
+                        android:drawableStart="@drawable/minus_vector"
+                        android:drawableTint="@color/white"
+                        android:onClick="decrement"
+                        android:padding="1dp" />
+
+
+                    <TextView
+                        android:id="@+id/value55"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:fontFamily="@font/brygada_1918"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_17ssp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtPlus55"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/squre_blue_bg"
+                        android:drawableStart="@drawable/plus_vector"
+                        android:drawableTint="@color/black"
+                        android:onClick="increment"
+                        android:padding="1dp" />
+
+
+                </LinearLayout>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_20sdp"
+                            android:fontFamily="@font/caudex"
+                            android:text="Total Stock :"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_15ssp" />
+
+
+                        <TextView
+                            android:id="@+id/totalStockOtherCategory"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:fontFamily="@font/caudex"
+                            android:text="0"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_15ssp" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_24sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/caudex"
+                android:text="How much product packing?"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/pack_of"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="120dp"
+                android:background="@drawable/edittext_touch_effect"
+                android:fontFamily="@font/caudex"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="5"
+                android:padding="15dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="#A9A7A7"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_22sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/caudex"
+                android:text="Product colour"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="bold" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/get_color_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_22sdp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/caudex"
+                    android:text="Red"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15ssp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/get_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="70dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/circle_vector"
+                    android:backgroundTint="#FF0000"
+                    android:gravity="center" />
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/instruction_click_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/instruction_click"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_24sdp"
+                    android:drawableEnd="@drawable/down_key"
+                    android:drawableTint="#1565C0"
+                    android:fontFamily="@font/caudex"
+                    android:text="Choose Product Colour"
+                    android:textColor="#1565C0"
+                    android:textSize="@dimen/_14ssp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <RadioGroup
+                    android:id="@+id/colourRadioGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="30dp">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:drawableEnd="@drawable/circle_vector"
+                        android:drawablePadding="25dp"
+                        android:drawableTint="#7FFFD4"
+                        android:fontFamily="@font/caudex"
+                        android:text="Aquamarine"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:theme="@style/MyRadioButton" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:drawableEnd="@drawable/circle_vector"
+                        android:drawablePadding="25dp"
+                        android:drawableTint="#007FFF"
+                        android:fontFamily="@font/caudex"
+                        android:text="Azure"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:theme="@style/MyRadioButton" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:drawableEnd="@drawable/circle_vector"
+                        android:drawablePadding="25dp"
+                        android:drawableTint="#000000"
+                        android:fontFamily="@font/caudex"
+                        android:text="Black"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:theme="@style/MyRadioButton" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:drawableEnd="@drawable/circle_vector"
+                        android:drawablePadding="25dp"
+                        android:drawableTint="#A52A2A"
+                        android:fontFamily="@font/caudex"
+                        android:text="Brown"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:theme="@style/MyRadioButton" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:drawableEnd="@drawable/circle_vector"
+                        android:drawablePadding="25dp"
+                        android:drawableTint="#FF7F50"
+                        android:fontFamily="@font/caudex"
+                        android:text="Coral"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:theme="@style/MyRadioButton" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:drawableEnd="@drawable/circle_vector"
+                        android:drawablePadding="25dp"
+                        android:drawableTint="#DC143C"
+                        android:fontFamily="@font/caudex"
+                        android:text="Crimson"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:theme="@style/MyRadioButton" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:drawableEnd="@drawable/circle_vector"
+                        android:drawablePadding="25dp"
+                        android:drawableTint="#00FFFF"
+                        android:fontFamily="@font/caudex"
+                        android:text="Cyan"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:theme="@style/MyRadioButton" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:drawableEnd="@drawable/circle_vector"
+                        android:drawablePadding="25dp"
+                        android:drawableTint="#FFD700"
+                        android:fontFamily="@font/caudex"
+                        android:text="Golden"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:theme="@style/MyRadioButton" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:drawableEnd="@drawable/circle_vector"
+                        android:drawablePadding="25dp"
+                        android:drawableTint="#808080"
+                        android:fontFamily="@font/caudex"
+                        android:text="Gray"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:theme="@style/MyRadioButton" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:drawableEnd="@drawable/circle_vector"
+                        android:drawablePadding="25dp"
+                        android:drawableTint="#008000"
+                        android:fontFamily="@font/caudex"
+                        android:text="Green"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:theme="@style/MyRadioButton" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:drawableEnd="@drawable/circle_vector"
+                        android:drawablePadding="25dp"
+                        android:drawableTint="#FF69B4"
+                        android:fontFamily="@font/caudex"
+                        android:text="Hot Pink"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:theme="@style/MyRadioButton" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:drawableEnd="@drawable/circle_vector"
+                        android:drawablePadding="25dp"
+                        android:drawableTint="#00FF00"
+                        android:fontFamily="@font/caudex"
+                        android:text="Lime"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:theme="@style/MyRadioButton" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:drawableEnd="@drawable/circle_vector"
+                        android:drawablePadding="25dp"
+                        android:drawableTint="#FF00FF"
+                        android:fontFamily="@font/caudex"
+                        android:text="Magenta"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:theme="@style/MyRadioButton" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:drawableEnd="@drawable/circle_vector"
+                        android:drawablePadding="25dp"
+                        android:drawableTint="#800000"
+                        android:fontFamily="@font/caudex"
+                        android:text="Maroon"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:theme="@style/MyRadioButton" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:drawableEnd="@drawable/circle_vector"
+                        android:drawablePadding="25dp"
+                        android:drawableTint="#000080"
+                        android:fontFamily="@font/caudex"
+                        android:text="Navy Blue"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:theme="@style/MyRadioButton" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:drawableEnd="@drawable/circle_vector"
+                        android:drawablePadding="25dp"
+                        android:drawableTint="#808000"
+                        android:fontFamily="@font/caudex"
+                        android:text="Olive"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:theme="@style/MyRadioButton" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:drawableEnd="@drawable/circle_vector"
+                        android:drawablePadding="25dp"
+                        android:drawableTint="#FFA500"
+                        android:fontFamily="@font/caudex"
+                        android:text="Orange"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:theme="@style/MyRadioButton" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:drawableEnd="@drawable/circle_vector"
+                        android:drawablePadding="25dp"
+                        android:drawableTint="#800080"
+                        android:fontFamily="@font/caudex"
+                        android:text="Purple"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:theme="@style/MyRadioButton" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:drawableEnd="@drawable/circle_vector"
+                        android:drawablePadding="25dp"
+                        android:drawableTint="#FF0000"
+                        android:fontFamily="@font/caudex"
+                        android:text="Red"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:theme="@style/MyRadioButton" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:drawableEnd="@drawable/circle_vector"
+                        android:drawablePadding="25dp"
+                        android:drawableTint="#4169E1"
+                        android:fontFamily="@font/caudex"
+                        android:text="Royal Blue"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:theme="@style/MyRadioButton" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:drawableEnd="@drawable/circle_vector"
+                        android:drawablePadding="25dp"
+                        android:drawableTint="#C0C0C0"
+                        android:fontFamily="@font/caudex"
+                        android:text="Silver"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:theme="@style/MyRadioButton" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:drawableEnd="@drawable/circle_vector"
+                        android:drawablePadding="25dp"
+                        android:drawableTint="#008080"
+                        android:fontFamily="@font/caudex"
+                        android:text="Teal"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:theme="@style/MyRadioButton" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:drawableEnd="@drawable/circle_vector"
+                        android:drawablePadding="25dp"
+                        android:drawableTint="#F5DEB3"
+                        android:fontFamily="@font/caudex"
+                        android:text="Wheat"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:theme="@style/MyRadioButton" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:drawableEnd="@drawable/circle_vector"
+                        android:drawablePadding="25dp"
+                        android:drawableTint="#FFFFFF"
+                        android:fontFamily="@font/caudex"
+                        android:text="White"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:theme="@style/MyRadioButton" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="15dp"
+                        android:drawableEnd="@drawable/circle_vector"
+                        android:drawablePadding="25dp"
+                        android:drawableTint="#FFFF00"
+                        android:fontFamily="@font/caudex"
+                        android:text="Yellow"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:theme="@style/MyRadioButton" />
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/mobileDetailLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txt1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_24sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/caudex"
+                        android:text="Ram"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12ssp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/txt2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginEnd="125dp"
+                        android:fontFamily="@font/caudex"
+                        android:text="Storage"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12ssp"
+                        android:textStyle="bold" />
+
+
+                    <EditText
+                        android:id="@+id/ram_mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txt1"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="230dp"
+                        android:background="@drawable/edittext_touch_effect"
+                        android:fontFamily="@font/caudex"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:padding="15dp"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="#A9A7A7"
+                        android:textCursorDrawable="@drawable/cursor_color"
+                        android:textSize="18sp" />
+
+
+                    <EditText
+                        android:id="@+id/storage_mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txt2"
+                        android:layout_marginStart="180dp"
+                        android:layout_marginEnd="30dp"
+                        android:background="@drawable/edittext_touch_effect"
+                        android:fontFamily="@font/caudex"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:padding="15dp"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="#A9A7A7"
+                        android:textCursorDrawable="@drawable/cursor_color"
+                        android:textSize="18sp" />
+
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_24sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/caudex"
+                    android:text="Processor"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/processor_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:background="@drawable/edittext_touch_effect"
+                    android:fontFamily="@font/caudex"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:padding="15dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#A9A7A7"
+                    android:textCursorDrawable="@drawable/cursor_color"
+                    android:textSize="18sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_24sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/caudex"
+                    android:text="Rear Camera"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/rear_camera_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:background="@drawable/edittext_touch_effect"
+                    android:fontFamily="@font/caudex"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:padding="15dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#A9A7A7"
+                    android:textCursorDrawable="@drawable/cursor_color"
+                    android:textSize="18sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_24sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/caudex"
+                    android:text="Front Camera"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/front_camera_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:background="@drawable/edittext_touch_effect"
+                    android:fontFamily="@font/caudex"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:padding="15dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#A9A7A7"
+                    android:textCursorDrawable="@drawable/cursor_color"
+                    android:textSize="18sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_24sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/caudex"
+                    android:text="Battery"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/battery_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:background="@drawable/edittext_touch_effect"
+                    android:fontFamily="@font/caudex"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:padding="15dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#A9A7A7"
+                    android:textCursorDrawable="@drawable/cursor_color"
+                    android:textSize="18sp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/fabric_gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_22sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/caudex"
+                    android:text="Product Fabric"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="bold" />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:textColorHint="#024805"
+                    app:boxCornerRadiusBottomEnd="@dimen/_10sdp"
+                    app:boxCornerRadiusBottomStart="@dimen/_10sdp"
+                    app:boxCornerRadiusTopEnd="@dimen/_10sdp"
+                    app:boxCornerRadiusTopStart="@dimen/_10sdp"
+                    app:boxStrokeWidth="0dp"
+                    app:boxStrokeWidthFocused="0dp"
+                    app:endIconMode="dropdown_menu"
+                    app:endIconTint="#024805"
+                    app:hintTextColor="#024805">
+
+                    <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                        android:id="@+id/fabricType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#8023AE27"
+                        android:fontFamily="@font/caudex"
+                        android:hint="Select Product Fabric"
+                        android:inputType="none"
+                        android:popupBackground="#FFFFFF"
+                        android:textColor="@color/black"
+                        android:textColorHighlight="@color/black"
+                        android:textSize="@dimen/_13sdp"
+                        android:textStyle="bold" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_22sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/caudex"
+                android:text="Who is this thing for ?"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="bold" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:textColorHint="#024805"
+                app:boxCornerRadiusBottomEnd="@dimen/_10sdp"
+                app:boxCornerRadiusBottomStart="@dimen/_10sdp"
+                app:boxCornerRadiusTopEnd="@dimen/_10sdp"
+                app:boxCornerRadiusTopStart="@dimen/_10sdp"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                app:endIconMode="dropdown_menu"
+                app:endIconTint="#024805"
+                app:hintTextColor="#024805">
+
+                <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                    android:id="@+id/idealType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#8023AE27"
+                    android:fontFamily="@font/caudex"
+                    android:hint="Select Ideal For"
+                    android:inputType="none"
+                    android:popupBackground="#FFFFFF"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/black"
+                    android:textSize="@dimen/_13sdp"
+                    android:textStyle="bold" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <LinearLayout
+                android:id="@+id/selection_gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_22sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/caudex"
+                    android:text="Where is the occasion ?"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="bold" />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:textColorHint="#024805"
+                    app:boxCornerRadiusBottomEnd="@dimen/_10sdp"
+                    app:boxCornerRadiusBottomStart="@dimen/_10sdp"
+                    app:boxCornerRadiusTopEnd="@dimen/_10sdp"
+                    app:boxCornerRadiusTopStart="@dimen/_10sdp"
+                    app:boxStrokeWidth="0dp"
+                    app:boxStrokeWidthFocused="0dp"
+                    app:endIconMode="dropdown_menu"
+                    app:endIconTint="#024805"
+                    app:hintTextColor="#024805">
+
+                    <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                        android:id="@+id/selectionType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#8023AE27"
+                        android:fontFamily="@font/caudex"
+                        android:hint="Select Selection For"
+                        android:inputType="none"
+                        android:popupBackground="#FFFFFF"
+                        android:textColor="@color/black"
+                        android:textColorHighlight="@color/black"
+                        android:textSize="@dimen/_13sdp"
+                        android:textStyle="bold" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/fabric_care_gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_22sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/caudex"
+                    android:text="Can you take care of anything to wash ?"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="bold" />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:textColorHint="#024805"
+                    app:boxCornerRadiusBottomEnd="@dimen/_10sdp"
+                    app:boxCornerRadiusBottomStart="@dimen/_10sdp"
+                    app:boxCornerRadiusTopEnd="@dimen/_10sdp"
+                    app:boxCornerRadiusTopStart="@dimen/_10sdp"
+                    app:boxStrokeWidth="0dp"
+                    app:boxStrokeWidthFocused="0dp"
+                    app:endIconMode="dropdown_menu"
+                    app:endIconTint="#024805"
+                    app:hintTextColor="#024805">
+
+                    <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                        android:id="@+id/fabric_careType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#8023AE27"
+                        android:fontFamily="@font/caudex"
+                        android:hint="Select Fabric Care"
+                        android:inputType="none"
+                        android:popupBackground="#FFFFFF"
+                        android:textColor="@color/black"
+                        android:textColorHighlight="@color/black"
+                        android:textSize="@dimen/_13sdp"
+                        android:textStyle="bold" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_24sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/caudex"
+                android:text="How much weight in one product ?"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="bold" />
+
+
+            <AutoCompleteTextView
+                android:id="@+id/weight_product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/edittext_touch_effect"
+                android:completionThreshold="1"
+                android:fontFamily="@font/caudex"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:padding="15dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="#A9A7A7"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:textSize="18sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="90dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_24sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/caudex"
+                    android:text="Enter product search keyword"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13ssp"
+                    android:textStyle="bold" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center">
+
+
+                    <EditText
+                        android:id="@+id/search_keyword11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="160dp"
+                        android:background="@drawable/edittext_touch_effect"
+                        android:fontFamily="@font/caudex"
+                        android:imeOptions="actionDone"
+                        android:inputType="text"
+                        android:padding="15dp"
+                        android:paddingEnd="10dp"
+                        android:textColor="@color/black"
+                        android:textCursorDrawable="@drawable/cursor_color"
+                        android:textSize="18sp" />
+
+
+                    <TextView
+                        android:id="@+id/plus_click11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginEnd="100dp"
+                        android:background="@drawable/plus_vector30"
+                        android:gravity="center" />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/search_key_hide_gone22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:visibility="gone">
+
+
+                    <EditText
+                        android:id="@+id/search_keyword22"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="160dp"
+                        android:background="@drawable/edittext_touch_effect"
+                        android:fontFamily="@font/caudex"
+                        android:imeOptions="actionDone"
+                        android:inputType="text"
+                        android:padding="15dp"
+                        android:paddingEnd="10dp"
+                        android:textColor="@color/black"
+                        android:textCursorDrawable="@drawable/cursor_color"
+                        android:textSize="18sp" />
+
+
+                    <TextView
+                        android:id="@+id/plus_click22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginEnd="100dp"
+                        android:background="@drawable/plus_vector30"
+                        android:gravity="center" />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/search_key_hide_gone33"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+
+                    android:gravity="center"
+                    android:visibility="gone">
+
+
+                    <EditText
+                        android:id="@+id/search_keyword33"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="160dp"
+                        android:background="@drawable/edittext_touch_effect"
+                        android:fontFamily="@font/caudex"
+                        android:imeOptions="actionDone"
+                        android:inputType="text"
+                        android:padding="15dp"
+                        android:paddingEnd="10dp"
+                        android:textColor="@color/black"
+                        android:textCursorDrawable="@drawable/cursor_color"
+                        android:textSize="18sp" />
+
+
+                    <TextView
+                        android:id="@+id/plus_click33"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginEnd="100dp"
+                        android:background="@drawable/plus_vector30"
+                        android:gravity="center" />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/search_key_hide_gone44"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+
+                    android:gravity="center"
+                    android:visibility="gone">
+
+
+                    <EditText
+                        android:id="@+id/search_keyword44"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="160dp"
+                        android:background="@drawable/edittext_touch_effect"
+                        android:fontFamily="@font/caudex"
+                        android:imeOptions="actionDone"
+                        android:inputType="text"
+                        android:padding="15dp"
+                        android:paddingEnd="10dp"
+                        android:textColor="@color/black"
+                        android:textCursorDrawable="@drawable/cursor_color"
+                        android:textSize="18sp" />
+
+
+                    <TextView
+                        android:id="@+id/plus_click44"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginEnd="100dp"
+                        android:background="@drawable/plus_vector30"
+                        android:gravity="center" />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/search_key_hide_gone55"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="50dp"
+                    android:gravity="center"
+                    android:visibility="gone">
+
+
+                    <EditText
+                        android:id="@+id/search_keyword55"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="160dp"
+                        android:background="@drawable/edittext_touch_effect"
+                        android:fontFamily="@font/caudex"
+                        android:imeOptions="actionDone"
+                        android:inputType="text"
+                        android:padding="15dp"
+                        android:paddingEnd="10dp"
+                        android:textColor="@color/black"
+                        android:textCursorDrawable="@drawable/cursor_color"
+                        android:textSize="18sp" />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/alegreya</item>
+        <item>@font/brygada_1918</item>
+        <item>@font/caudex</item>
+        <item>@font/chonburi</item>
+        <item>@font/dm_serif_display</item>
+        <item>@font/eagle_lake</item>
+        <item>@font/gelasio</item>
+        <item>@font/meddon</item>
+        <item>@font/miltonian_tattoo</item>
+        <item>@font/nosifer</item>
+    </array>
+</resources>

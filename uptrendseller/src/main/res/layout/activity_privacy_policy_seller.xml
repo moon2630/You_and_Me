@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".privacy_policy_seller">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_marginBottom="19dp"
+        android:background="@drawable/yeallw_top"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/miltonian_tattoo"
+            android:shadowColor="#2196F3"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="10"
+            android:text="Privacy Policy"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_26ssp" />
+
+
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_90sdp"
+        android:scrollbarSize="5dp"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="30dp"
+                    android:backgroundTint="@color/white"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="@dimen/_10sdp"
+                    app:cardElevation="5dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_8sdp"
+                            android:layout_marginTop="10dp"
+                            android:drawableEnd="@drawable/vector_hello"
+                            android:drawablePadding="15dp"
+                            android:fontFamily="@font/caudex"
+                            android:gravity="center_vertical"
+                            android:text="HELLO!"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_20ssp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginBottom="10dp"
+                            android:fontFamily="@font/caudex"
+                            android:text="Before you can create an account, please read and accept our Privacy Policy."
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14ssp" />
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:backgroundTint="#46CB4B"
+android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/_25sdp"
+                        android:background="@drawable/green_circle_bg" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:fontFamily="@font/brygada_1918"
+                        android:text="Last updated : 15/12/25"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_11ssp" />
+
+
+                </LinearLayout>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="30dp"
+                    android:backgroundTint="@color/white"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="@dimen/_10sdp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="10dp">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:fontFamily="@font/caudex"
+                            android:text="◆ Thank you for choosing UpTrend! Your privacy is important to us. This Privacy Policy outlines how UpTrend ('we,' 'our,' or 'us') collects, uses, shares, and protects your personal information when you use our mobile application (the 'App'). By using the App, you agree to the terms and conditions of this Privacy Policy."
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/caudex"
+                            android:text="1. Information We Collect:"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_15ssp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/caudex"
+                            android:text="a. Personal Information:"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14ssp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:fontFamily="@font/caudex"
+                            android:text="- When you create an account, we may collect information such as your name, email address, and phone number."
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13ssp" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:fontFamily="@font/caudex"
+                            android:text="- If you connect your social media accounts, we may collect information from those accounts."
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13ssp" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/caudex"
+                            android:text="b. Usage Information:"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14ssp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:fontFamily="@font/caudex"
+                            android:text="- We may collect information about how you use the App, including your interactions, preferences, and settings."
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13ssp" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/caudex"
+                            android:text="c. Device Information:"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14ssp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:fontFamily="@font/caudex"
+                            android:text="- We may collect information about your device, including its model, operating system, and unique identifiers."
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13ssp" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/caudex"
+                            android:text="2. How We Use Your Information:"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_15ssp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/caudex"
+                            android:text="a. Provide and Improve Services:"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14ssp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:textColor="@color/black"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:fontFamily="@font/caudex"
+                            android:text="- We use your information to provide and enhance the functionality of the App, including personalized features and content."
+                            android:textSize="@dimen/_13ssp" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/caudex"
+                            android:text="b. Communicate with You:"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14ssp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:textColor="@color/black"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:fontFamily="@font/caudex"
+                            android:text="- We may use your contact information to send you important updates, notifications, and promotional materials."
+                            android:textSize="@dimen/_13ssp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/caudex"
+                            android:text="c. Analytics and Research:"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14ssp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:fontFamily="@font/caudex"
+                            android:text="- We analyze user behavior to improve our services, troubleshoot issues, and conduct research."
+                            android:textSize="@dimen/_13ssp" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/caudex"
+                            android:text="d. Legal Compliance:"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14ssp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:fontFamily="@font/caudex"
+                            android:text="- We may use your information to comply with legal obligations, resolve disputes, and enforce our terms and policies."
+                            android:textSize="@dimen/_13ssp" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/caudex"
+                            android:text="3. Sharing Your Information:"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_15ssp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/caudex"
+                            android:text="a. Third-Party Service Providers:"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14ssp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:fontFamily="@font/caudex"
+                            android:text="- We may share your information with third-party service providers to assist with app development, maintenance, and analytics."
+                            android:textSize="@dimen/_13ssp" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/caudex"
+                            android:text="b. Legal Requirements:"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14ssp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:fontFamily="@font/caudex"
+                            android:text="- We may disclose your information if required by law or in response to a court order or government request."
+                            android:textSize="@dimen/_13ssp" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/caudex"
+                            android:text="4. Your Choices:"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_15ssp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/caudex"
+                            android:text="a. Account Information:"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14ssp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:textColor="@color/black"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:fontFamily="@font/caudex"
+                            android:text="- You can review and update your account information through the App settings."
+                            android:textSize="@dimen/_13ssp" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/caudex"
+                            android:text="b. Opt-Out:"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14ssp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:textColor="@color/black"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:fontFamily="@font/caudex"
+                            android:text="- You can opt-out of receiving promotional communications by following the instructions in our communications."
+                            android:textSize="@dimen/_13ssp" />
+
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/caudex"
+                            android:text="5. Security:"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_15ssp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:textColor="@color/black"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:fontFamily="@font/caudex"
+                            android:text="a. We implement security measures to protect your information from unauthorized access and use."
+                            android:textSize="@dimen/_13ssp" />
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/caudex"
+                            android:text="6. Children's Privacy:"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14ssp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:fontFamily="@font/caudex"
+                            android:text="a. The App is not intended for children under the age of 13. We do not knowingly collect personal information from children."
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13ssp" />
+
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/caudex"
+                            android:text="7. Changes to this Privacy Policy:"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_15ssp"
+                            android:textStyle="bold" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:fontFamily="@font/caudex"
+                            android:text="a. We may update this Privacy Policy to reflect changes in our practices. We will notify you of significant changes through the App or other means."                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13ssp" />
+
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/caudex"
+                            android:text="8. Contact Us:"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_15ssp"
+                            android:textStyle="bold" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:fontFamily="@font/caudex"
+                            android:text="a. If you have any questions or concerns about this Privacy Policy, please contact us at [jatindarji@gmail.com]."                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13ssp" />
+
+
+                        <TextView
+                            android:textColor="@color/black"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:fontFamily="@font/caudex"
+                            android:layout_marginBottom="15dp"
+                            android:text="         By using the UpTrend App, you acknowledge that you have read and understood this Privacy Policy."                            android:textSize="@dimen/_13ssp" />
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

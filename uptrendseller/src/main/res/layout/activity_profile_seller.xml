@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".profile_seller">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/txt1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_blue">
+
+            <TextView
+                android:id="@+id/save_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="30dp"
+                android:fontFamily="@font/caudex"
+                android:text="Save"
+                android:textColor="#F2F7F8"
+                android:textSize="@dimen/_20ssp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_50sdp"
+                android:fontFamily="@font/nosifer"
+                android:gravity="center"
+                android:text="My Profile"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_25ssp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_below="@id/txt1"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="-70dp"
+            android:src="@drawable/img4" />
+
+
+        <TextView
+            android:id="@+id/add_img_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image"
+            android:fontFamily="@font/caudex"
+            android:text="Edit image"
+            android:textAlignment="center"
+            android:textColor="#079E0D"
+            android:layout_marginTop="4dp"
+            android:textSize="@dimen/_15ssp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/profile_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_img_txt"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="50dp"
+            android:fontFamily="@font/caudex"
+            android:gravity="center"
+            android:inputType="text"
+            android:textCursorDrawable="@drawable/cursor_color"
+
+            android:textColor="@color/black"
+            android:textSize="@dimen/_17ssp" />
+
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_name"
+            android:fontFamily="@font/brygada_1918"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="————————— Mobile No ————————"
+            android:textColor="#4CAF50"
+            android:textSize="@dimen/_13ssp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:id="@+id/txt3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt2"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:fontFamily="@font/caudex"
+                android:text="+91"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_20ssp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/profile_mobile_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="60dp"
+                android:fontFamily="@font/caudex"
+                android:gravity="center"
+                android:textCursorDrawable="@drawable/cursor_color"
+
+                android:inputType="number"
+                android:maxLength="10"
+                android:paddingTop="@dimen/_10sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_18ssp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt3"
+            android:fontFamily="@font/brygada_1918"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+
+            android:text="—————————— Email —————————"
+            android:textColor="#4CAF50"
+            android:textSize="@dimen/_13ssp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/profile_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt4"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:fontFamily="@font/caudex"
+            android:gravity="center"
+            android:inputType="text"
+            android:layout_marginTop="10dp"
+            android:paddingTop="@dimen/_10sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_17ssp" />
+
+        <TextView
+            android:id="@+id/txt5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_email"
+            android:fontFamily="@font/brygada_1918"
+            android:gravity="center"
+            android:text="———————— Display Name ———————"
+            android:textColor="#4CAF50"
+            android:layout_marginTop="15dp"
+            android:textSize="@dimen/_13ssp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/profile_display"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt5"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:fontFamily="@font/caudex"
+            android:gravity="center"
+            android:inputType="text"
+            android:layout_marginTop="10dp"
+            android:textCursorDrawable="@drawable/cursor_color"
+
+            android:paddingTop="@dimen/_10sdp"
+
+            android:textColor="@color/black"
+            android:textSize="@dimen/_17ssp" />
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

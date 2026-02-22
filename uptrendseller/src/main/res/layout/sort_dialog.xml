@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sort Products By"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="15dp"
+        android:fontFamily="@font/caudex"
+        android:textColor="@color/black" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radioNewestDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Newest Date Product"
+            android:padding="8dp"
+            android:textSize="16sp"
+            android:theme="@style/MyRadioButton"
+            android:textColor="@color/black"
+            android:fontFamily="@font/caudex" />
+
+        <RadioButton
+            android:id="@+id/radioOldestDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Oldest Date Product"
+            android:padding="8dp"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:theme="@style/MyRadioButton"
+            android:fontFamily="@font/caudex" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#B9B8B8"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp" />
+
+        <RadioButton
+            android:theme="@style/MyRadioButton"
+            android:id="@+id/radioHighPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="High Price"
+            android:padding="8dp"
+            android:textColor="@color/black"
+
+            android:textSize="16sp"
+            android:fontFamily="@font/caudex" />
+
+        <RadioButton
+            android:theme="@style/MyRadioButton"
+            android:id="@+id/radioLowPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Low Price"
+            android:textColor="@color/black"
+
+            android:padding="8dp"
+            android:textSize="16sp"
+            android:fontFamily="@font/caudex" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#B9B8B8"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp" />
+
+        <RadioButton
+            android:theme="@style/MyRadioButton"
+            android:id="@+id/radioNameAToZ"
+            android:textColor="@color/black"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name A to Z"
+            android:padding="8dp"
+            android:textSize="16sp"
+            android:fontFamily="@font/caudex" />
+
+        <RadioButton
+            android:theme="@style/MyRadioButton"
+            android:id="@+id/radioNameZToA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name Z to A"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:fontFamily="@font/caudex" />
+
+    </RadioGroup>
+
+</LinearLayout>

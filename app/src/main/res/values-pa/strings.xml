@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="signIn">ਆਪਣੇ ਖਾਤੇ ਵਿੱਚ ਸਾਈਨ ਇਨ ਕਰੋ</string>
+    <string name="Viewyourwishlist">◆ ਆਪਣੀ ਇੱਛਾ ਸੂਚੀ ਵੇਖੋ</string>
+    <string name="find">◆ ਪਿਛਲੀਆਂ ਖਰੀਦਾਂ ਨੂੰ ਲੱਭੋ ਅਤੇ ਮੁੜ ਕ੍ਰਮਬੱਧ ਕਰੋ</string>
+    <string name="track">◆ ਆਪਣੀਆਂ ਖਰੀਦਾਂ \'ਤੇ ਨਜ਼ਰ ਰੱਖੋ</string>
+    <string name="already">ਪਹਿਲਾਂ ਹੀ ਇੱਕ ਗਾਹਕ ਹੈ? ਸਾਈਨ - ਇਨ</string>
+    <string name="newAc">UpTrend ਲਈ ਨਵੇਂ? ਅਕਾਉਂਟ ਬਣਾਓ</string>
+    <string name="skip">ਸਾਈਨ ਇਨ ਕਰਨਾ ਛੱਡੋ</string>
+
+
+    <string name="welcome">ਸੁਆਗਤ ਹੈ</string>
+    <string name="createAc">ਖਾਤਾ ਬਣਾਉ</string>
+    <string name="newAcm">ਅੱਪਟ੍ਰੇਂਡ ਲਈ ਨਵੇਂ?</string>
+    <string name="firstLastName">ਪਹਿਲਾ ਅਤੇ ਆਖਰੀ ਨਾਮ</string>
+    <string name="mobileNo">ਮੋਬਾਈਲ ਨੰ</string>
+    <string name="email">ਈ - ਮੇਲ</string>
+    <string name="password">ਪਾਸਵਰਡ</string>
+    <string name="passwordMsg">ਪਾਸਵਰਡ ਘੱਟੋ-ਘੱਟ 6 ਅੱਖਰਾਂ ਦਾ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ।</string>
+    <string name="showPass">ਪਾਸਵਰਡ ਦਿਖਾਓ</string>
+
+
+    <string name="signIn2">ਸਾਈਨ - ਇਨ</string>
+    <string name="already2">ਕੀ ਪਹਿਲਾਂ ਤੋਂ ਹੀ ਇੱਕ ਗਾਹਕ ਹੈ?</string>
+    <string name="forget">ਪਾਸਵਰਡ ਭੁੱਲ ਜਾਓ</string>
+
+
+    <string name="forgetpass">ਆਪਣਾ ਪਾਸਵਰਡ ਭੁੱਲ ਗਏ</string>
+    <string name="massage1">ਕਿਰਪਾ ਕਰਕੇ ਉਹ ਈਮੇਲ ਪਤਾ ਦਾਖਲ ਕਰੋ ਜਿਸ \'ਤੇ ਤੁਸੀਂ ਆਪਣੀ ਪਾਸਵਰਡ ਰੀਸੈਟ ਜਾਣਕਾਰੀ ਭੇਜਣਾ ਚਾਹੁੰਦੇ ਹੋ</string>
+    <string name="enter1">ਈਮੇਲ ਪਤਾ ਦਰਜ ਕਰੋ</string>
+    <string name="requestLink">ਰੀਸੈੱਟ ਲਿੰਕ ਦੀ ਬੇਨਤੀ ਕਰੋ</string>
+    <string name="back1">ਸਾਈਨ ਇਨ ਕਰਨ ਲਈ ਵਾਪਸ ਜਾਓ</string>
+    <string name="Instruction">ਹਦਾਇਤ</string>
+    <string name="Instruction1">1. ਤੁਸੀਂ ਇੱਥੇ ਆਪਣੀ ਸਾਈਨ ਇਨ ਆਈਡੀ ਦਾ ਈਮੇਲ ਦਾਖਲ ਕਰੋ।</string>
+    <string name="Instruction2">2. ਰੀਸੈਟ ਬਟਨ \'ਤੇ ਕਲਿੱਕ ਕਰੋ ਅਤੇ ਆਪਣੀ ਈਮੇਲ ਦੀ ਜਾਂਚ ਕਰੋ।</string>
+    <string name="Instruction3">3. ਆਪਣੀ ਈਮੇਲ ਖੋਲ੍ਹੋ ਅਤੇ ਰੀਸੈਟ ਪਾਸਵਰਡ ਦੇ ਲਿੰਕ ਦੀ ਜਾਂਚ ਕਰੋ।</string>
+    <string name="Instruction4">4. ਲਿੰਕ \'ਤੇ ਕਲਿੱਕ ਕਰੋ ਅਤੇ ਆਪਣਾ ਪਾਸਵਰਡ ਰੀਸੈਟ ਕਰੋ।</string>
+    <string name="Instruction5">5. ਤੁਸੀਂ ਸਾਈਨ ਇਨ ਕਰਕੇ ਆਪਣਾ ਨਵਾਂ ਪਾਸਵਰਡ ਭਰ ਸਕਦੇ ਹੋ।</string>
+</resources>

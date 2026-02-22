@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".cancel_order">
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/greenmeee"
+        app:cardElevation="@dimen/_10sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/close_btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginTop="6dp"
+                android:drawableTint="@color/white"
+
+                android:drawableStart="@drawable/back_left" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_11sdp"
+                android:fontFamily="@font/dm_serif_display"
+                android:text="Request Cancellation"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_18ssp" />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_45sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="20dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp">
+
+                        <TextView
+                            android:id="@+id/productNameCancel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="180dp"
+                            android:fontFamily="@font/caudex"
+                            android:text="Product Name"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14ssp" />
+
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/historyProductImageCancel"
+                            android:layout_width="83dp"
+                            android:layout_height="83dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="30dp"
+
+                            android:scaleType="centerCrop"
+                            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize10Percent"
+                            app:srcCompat="@drawable/ic_launcher_background" />
+
+
+                        <LinearLayout
+                            android:id="@+id/layout1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/productNameCancel"
+                            android:layout_marginStart="10dp"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+
+
+                            <TextView
+                                android:id="@+id/productSize"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/caudex"
+                                android:text=""
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_13ssp" />
+
+
+                            <TextView
+                                android:id="@+id/productColour"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:fontFamily="@font/caudex"
+                                android:text="white"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_13ssp" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/caudex"
+                                android:text="|"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_13ssp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:fontFamily="@font/caudex"
+                                android:text="Qty :"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_13ssp" />
+
+
+                            <TextView
+                                android:id="@+id/txtQty"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:fontFamily="@font/caudex"
+                                android:text="5"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_13ssp" />
+
+
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:id="@+id/productPriceCancel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/layout1"
+                            android:layout_marginStart="7dp"
+                            android:layout_marginEnd="180dp"
+                            android:drawableStart="@drawable/rupee_vector30"
+                            android:fontFamily="@font/caudex"
+                            android:text="5999"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_15ssp"
+                            android:textStyle="bold" />
+
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="60dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:fontFamily="@font/caudex"
+                        android:text="Reason For Cancellation"
+                        android:textColor="#1DA022"
+                        android:textSize="@dimen/_15ssp"
+                        android:textStyle="bold" />
+
+
+                    <RadioGroup
+                        android:id="@+id/reasonRadioGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="20dp"
+
+                        android:layout_marginTop="5dp">
+
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/caudex"
+                            android:paddingStart="@dimen/_4sdp"
+                            android:text="I want to change address for the order"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13ssp"
+                            android:textStyle="bold"
+                            android:theme="@style/MyRadioButton" />
+
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/caudex"
+                            android:paddingStart="@dimen/_4sdp"
+                            android:text="Price for the product has decreased"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13ssp"
+                            android:textStyle="bold"
+                            android:theme="@style/MyRadioButton" />
+
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/caudex"
+                            android:paddingStart="@dimen/_4sdp"
+                            android:text="I want to convert my order to Prepaid"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13ssp"
+                            android:textStyle="bold"
+                            android:theme="@style/MyRadioButton" />
+
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/caudex"
+                            android:paddingStart="@dimen/_4sdp"
+                            android:text="Expected delivery time is very long"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13ssp"
+                            android:textStyle="bold"
+                            android:theme="@style/MyRadioButton" />
+
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/caudex"
+                            android:paddingStart="@dimen/_4sdp"
+                            android:text="I have change my mind"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13ssp"
+                            android:textStyle="bold"
+                            android:theme="@style/MyRadioButton" />
+
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/caudex"
+                            android:paddingStart="@dimen/_4sdp"
+                            android:text="I have purchased the product elsewhere"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13ssp"
+                            android:textStyle="bold"
+                            android:theme="@style/MyRadioButton" />
+
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/caudex"
+                            android:paddingStart="@dimen/_4sdp"
+                            android:text="I want to change my phone number"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13ssp"
+                            android:textStyle="bold"
+                            android:theme="@style/MyRadioButton" />
+
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/caudex"
+                            android:paddingStart="@dimen/_4sdp"
+                            android:text="I want to cancel due to product quality issues"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13ssp"
+                            android:textStyle="bold"
+                            android:theme="@style/MyRadioButton" />
+
+
+                    </RadioGroup>
+
+
+                    <EditText
+                        android:id="@+id/txtComment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="20dp"
+                        android:background="@drawable/edittext_touch_effect"
+                        android:fontFamily="@font/caudex"
+
+                        android:hint="Comment (optional)"
+                        android:imeOptions="actionDone"
+                        android:importantForAutofill="no"
+                        android:padding="30dp"
+                        android:paddingStart="@dimen/_15sdp"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:textColor="@color/black"
+
+                        android:textColorHint="#A9A7A7"
+                        android:textCursorDrawable="@drawable/cursor_color"
+                        android:textSize="17sp" />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/continue_btn_splash"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="60dp"
+                android:background="@drawable/btn_background"
+                android:fontFamily="@font/dm_serif_display"
+                android:text="Continue"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold" />
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

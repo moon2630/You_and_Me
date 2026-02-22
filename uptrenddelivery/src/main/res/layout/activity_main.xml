@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/delivery_logo"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_150sdp"
+        android:src="@drawable/deliverylogo" />
+
+
+    <TextView
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/delivery_logo"
+        android:layout_marginLeft="@dimen/_135sdp"
+        android:layout_marginTop="@dimen/_160sdp"
+        android:fontFamily="@font/brygada_1918"
+        android:text="from"
+        android:textColor="#7A7272"
+        android:textSize="@dimen/_14ssp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/delivery_logo"
+        android:layout_marginLeft="@dimen/_82sdp"
+        android:src="@drawable/fire"
+        android:layout_marginTop="@dimen/_166sdp"/>
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/delivery_logo"
+        android:layout_marginLeft="@dimen/_125sdp"
+        android:layout_marginTop="@dimen/_180sdp"
+        android:fontFamily="@font/miltonian_tattoo"
+        android:text="Up Trend"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_16ssp" />
+
+
+</RelativeLayout>

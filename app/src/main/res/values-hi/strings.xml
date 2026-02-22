@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="signIn">अपने अकाउंट में साइन इन करें</string>
+    <string name="Viewyourwishlist">◆ अपनी इच्छा सूची देखें</string>
+    <string name="find">◆ पिछली खरीदारी ढूंढें और पुनः व्यवस्थित करें</string>
+    <string name="track">◆ अपनी खरीदारी को ट्रैक करें</string>
+    <string name="already">पहले से ही एक ग्राहक? दाखिल करना</string>
+    <string name="newAc">UpTrend में नए हैं? खाता बनाएं</string>
+    <string name="skip">साइन इन करना छोड़ें</string>
+
+    <string name="welcome">स्वागत</string>
+    <string name="createAc">खाता बनाएं।</string>
+    <string name="newAcm">अपट्रेंड में नया?</string>
+    <string name="firstLastName">पहला और आखिरी नाम</string>
+    <string name="mobileNo">मोबाइल नंबर</string>
+    <string name="email">ईमेल</string>
+    <string name="password">पासवर्ड</string>
+    <string name="passwordMsg">पासवर्ड कम से कम 6 अंकों का होना चाहिए।</string>
+    <string name="showPass">पासवर्ड दिखाए</string>
+
+
+    <string name="signIn2">दाखिल करना।</string>
+    <string name="already2">क्या आप पहले से ही ग्राहक हैं?</string>
+    <string name="forget">पासवर्ड भूल गए</string>
+
+
+    <string name="forgetpass">अपना पासवर्ड भूल गए</string>
+    <string name="massage1">कृपया वह ईमेल पता दर्ज करें जिस पर आप अपना पासवर्ड रीसेट जानकारी भेजना चाहते हैं</string>
+    <string name="enter1">ईमेल पता दर्ज करें</string>
+    <string name="requestLink">रीसेट लिंक का अनुरोध करें</string>
+    <string name="back1">साइन इन करने के लिए वापस जाएँ</string>
+    <string name="Instruction">अनुदेश</string>
+    <string name="Instruction1">1. आप यहां अपनी साइन इन आईडी का ईमेल डालें।</string>
+    <string name="Instruction2">2. रीसेट बटन पर क्लिक करें और अपना ईमेल जांचें।</string>
+    <string name="Instruction3">3. अपना ईमेल खोलें और रीसेट पासवर्ड का लिंक जांचें।</string>
+    <string name="Instruction4">4. लिंक पर क्लिक करें और अपना पासवर्ड रीसेट करें।</string>
+    <string name="Instruction5">5. आप साइन इन करके अपना नया पासवर्ड भर सकते हैं।</string>
+</resources>

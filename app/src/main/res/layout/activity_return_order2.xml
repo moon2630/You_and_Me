@@ -1,0 +1,709 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".return_order2">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/greenmeee"
+        app:cardElevation="@dimen/_10sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/close_btn_Return2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginTop="6dp"
+                android:drawableTint="@color/white"
+
+                android:drawableStart="@drawable/back_left" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_11sdp"
+                android:fontFamily="@font/dm_serif_display"
+                android:text="Request Return"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_18ssp" />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="@dimen/_10sdp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/return2Continuebtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:layout_marginEnd="70dp"
+
+            android:layout_gravity="center"
+            android:background="@drawable/btn_background"
+            android:fontFamily="@font/dm_serif_display"
+            android:text="Continue"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15ssp"
+            android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="@dimen/_45sdp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="20dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp">
+
+                        <TextView
+                            android:id="@+id/productNameReturn2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="180dp"
+                            android:fontFamily="@font/caudex"
+                            android:text="Product Name"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14ssp" />
+
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/historyProductImageReturn2"
+                            android:layout_width="83dp"
+                            android:layout_height="83dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="30dp"
+
+                            android:scaleType="centerCrop"
+                            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize10Percent"
+                            app:srcCompat="@drawable/ic_launcher_background" />
+
+
+                        <LinearLayout
+                            android:id="@+id/layout1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/productNameReturn2"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="3dp"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+
+
+                            <TextView
+                                android:id="@+id/txtSize"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:fontFamily="@font/caudex"
+                                android:text=""
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_13ssp" />
+
+
+                            <TextView
+                                android:id="@+id/productColour"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:fontFamily="@font/caudex"
+                                android:text="white"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_13ssp" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/caudex"
+                                android:text="|"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_13ssp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:fontFamily="@font/caudex"
+                                android:text="Qty :"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_13ssp" />
+
+
+                            <TextView
+                                android:id="@+id/txtQty"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:fontFamily="@font/caudex"
+                                android:text="5"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_13ssp" />
+
+
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:id="@+id/productPriceReturn2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/layout1"
+                            android:layout_marginStart="7dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginEnd="180dp"
+                            android:drawableStart="@drawable/rupee_vector30"
+                            android:fontFamily="@font/caudex"
+                            android:text="5999"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_15ssp"
+                            android:textStyle="bold" />
+
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="20dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/caudex"
+                        android:text="What do you want in return?"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14ssp"
+                        android:textStyle="bold" />
+
+
+                    <RadioButton
+                        android:id="@+id/refund"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/caudex"
+                        android:text="Refund"
+                        android:textSize="@dimen/_13ssp"
+                        android:textStyle="bold"
+                        android:theme="@style/MyRadioButton" />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="20dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical"
+                    android:paddingStart="15dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="15dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/caudex"
+                            android:text="Refund Amount :"
+                            android:textColor="#229526"
+                            android:textStyle="bold"
+
+                            android:textSize="@dimen/_13ssp" />
+
+
+                        <TextView
+                            android:id="@+id/refundAmount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:drawableStart="@drawable/rupee_vector30"
+                            android:fontFamily="@font/caudex"
+                            android:text="5999"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14ssp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <RadioButton
+                            android:id="@+id/upi_btn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/caudex"
+                            android:paddingStart="@dimen/_4sdp"
+                            android:text="Bank Account via UPI"
+                            android:textSize="@dimen/_13ssp"
+                            android:textStyle="bold"
+                            android:theme="@style/MyRadioButton" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="7dp"
+                            android:drawableStart="@drawable/timer_vector24"
+                            android:drawablePadding="5dp"
+                            android:drawableTint="#8F8D8D"
+                            android:fontFamily="@font/caudex"
+                            android:text="Refund within 24 hours of pick-up"
+                            android:textColor="#8F8D8D"
+                            android:textSize="@dimen/_11ssp"
+                            android:textStyle="bold" />
+
+
+                        <LinearLayout
+                            android:id="@+id/upi_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="#ADFBB0"
+                            android:orientation="vertical"
+                            android:paddingStart="15dp"
+                            android:paddingTop="15dp"
+                            android:paddingEnd="15dp"
+                            android:paddingBottom="15dp"
+                            android:visibility="gone">
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:fontFamily="@font/caudex"
+                                android:text="Get UPI ID linked to your registered phone number for payment partners"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_11ssp"
+                                android:textStyle="bold" />
+
+
+                            <EditText
+                                android:id="@+id/upiId"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/caudex"
+                                android:hint="Enter UPI ID"
+                                android:inputType="text"
+                                android:textColor="@color/black"
+                                android:textColorHint="#A9A7A7"
+                                android:textCursorDrawable="@drawable/cursor_color"
+                                android:textSize="@dimen/_14ssp" />
+
+
+                        </LinearLayout>
+
+
+                        <RadioButton
+                            android:id="@+id/bank_account_btn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/caudex"
+                            android:paddingStart="@dimen/_4sdp"
+                            android:text="Bank Account"
+                            android:textSize="@dimen/_13ssp"
+                            android:textStyle="bold"
+                            android:theme="@style/MyRadioButton" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="7dp"
+                            android:drawableStart="@drawable/timer_vector24"
+                            android:drawablePadding="5dp"
+                            android:drawableTint="#8F8D8D"
+                            android:fontFamily="@font/caudex"
+
+                            android:text="Refund within 5-7 days of pick-up"
+                            android:textColor="#8F8D8D"
+                            android:textSize="@dimen/_11ssp"
+                            android:textStyle="bold" />
+
+
+                        <LinearLayout
+                            android:id="@+id/bank_account_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+
+                            android:background="#ADFBB0"
+                            android:orientation="vertical"
+                            android:paddingStart="15dp"
+                            android:paddingTop="15dp"
+                            android:paddingEnd="15dp"
+                            android:paddingBottom="15dp"
+                            android:visibility="gone">
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/caudex"
+                                android:text="Enter valid information about your Bank Account"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_11ssp"
+                                android:textStyle="bold" />
+
+
+                            <EditText
+                                android:id="@+id/accountName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/caudex"
+                                android:hint="Account Holder Name"
+                                android:inputType="text"
+
+                                android:textColor="@color/black"
+                                android:textColorHint="#A9A7A7"
+                                android:textCursorDrawable="@drawable/cursor_color"
+                                android:textSize="@dimen/_14ssp" />
+
+
+                            <EditText
+                                android:id="@+id/accountNumber"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/caudex"
+                                android:hint="Enter Bank Account Number"
+                                android:inputType="number"
+                                android:maxLength="18"
+
+
+                                android:textColor="@color/black"
+                                android:textColorHint="#A9A7A7"
+                                android:textCursorDrawable="@drawable/cursor_color"
+                                android:textSize="@dimen/_14ssp" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="20dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/caudex"
+                        android:text="Pick up and delivery"
+                        android:textAlignment="center"
+                        android:textColor="#229526"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_13ssp" />
+
+
+                    <TextView
+                        android:id="@+id/userName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/caudex"
+                        android:text="Parthik Dhimmar"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14ssp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/mobileNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:drawableStart="@drawable/phone_vector24"
+                        android:drawablePadding="10dp"
+                        android:drawableTint="#8F8D8D"
+                        android:layout_marginTop="5dp"
+
+                        android:fontFamily="@font/caudex"
+                        android:text="7985455545"
+                        android:textColor="#8F8D8D"
+                        android:textSize="@dimen/_13ssp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/txtAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="10dp"
+                        android:drawableStart="@drawable/location_vector"
+                        android:drawablePadding="10dp"
+                        android:drawableTint="#8F8D8D"
+
+                        android:fontFamily="@font/caudex"
+                        android:text="Badal Faliya, Char rasta,Machiwad, Bilimora 396321"
+                        android:textColor="#8F8D8D"
+                        android:textSize="@dimen/_13ssp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="20dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/caudex"
+                        android:text="◆ We hope you understand that we can only accept items for return, if they have not been used or damaged."
+                        android:textColor="#8F8D8D"
+                        android:textSize="@dimen/_12ssp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/caudex"
+
+                        android:text="◆ The brand's original packaging (if present), MRP tags/labels and accessories also need to be returned along with the item.Please ensure any personal data (in Electronic products) is erased."
+                        android:textColor="#8F8D8D"
+                        android:textSize="@dimen/_12ssp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp"
+                android:background="#70E2DCDC"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+android:textAlignment="center"
+                    android:layout_marginTop="10dp"
+
+                    android:fontFamily="@font/caudex"
+                    android:text="By tapping on 'Submit Request' I agree to"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="bold" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/terms_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/caudex"
+                        android:text="terms and condition"
+                        android:textColor="#052BFF"
+                        android:textSize="@dimen/_12ssp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/caudex"
+                        android:paddingEnd="15dp"
+                        android:text="of refunds."
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12ssp"
+                        android:textStyle="bold"
+                        android:layout_marginStart="10dp"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>
